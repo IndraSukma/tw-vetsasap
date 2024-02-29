@@ -1,0 +1,83 @@
+{% extends "layouts/main.html" %}
+
+<!-- prettier-ignore -->
+{% from "macros/faq.html" import faq %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<main>
+  <div class="container">
+    <div class="breadcrumbs text-sm md:text-base font-semibold mt-28 mb-12 lg:mt-40">
+      <ul>
+        <li><a href="index.html" class="link link-hover hover:link-primary">Home</a></li>
+        <li><a href="index.html#services" class="link link-hover hover:link-primary">Services</a></li>
+        <li><span class="text-gray-500">{{ global.services[11].title }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container flex flex-col md:flex-row-reverse gap-8 md:gap-6 xl:gap-8 mb-20 md:mb-24 xl:mb-32 items-center xl:justify-between">
+    <img src="{{ global.services[11].image }}" alt="{{ global.services[11].image | replace(" @img/services/", "") | replace(".webp", "") | replace("-", " ") | title }}" class="md:w-1/2 object-cover w-full aspect-[4/3] rounded-2xl" />
+    <div class="md:w-1/2 flex flex-col justify-center">
+      <h1 class="text-4xl/none lg:text-5xl font-black">
+        Blood 
+        <span class="text-primary">Work</span>
+      </h1>
+      <p class="text-base md:text-sm lg:text-lg text-gray-700 mt-4 mb-8 lg:mt-6 lg:mb-12">
+        Vets ASAP is ready to do in-home pet blood work to monitor your cat or dog's health, or for diagnosis purposes. Our Fear-Free® vets will take your pet's blood in your comfy home.
+      </p>
+      <a href="#request-appointment" class="btn lg:btn-lg btn-secondary mr-auto">Request appointment</a>
+    </div>
+  </div>
+  <div class="container">
+    <article
+      class="prose lg:prose-lg prose-h2:text-gray-950 prose-h4:text-xl prose-h4:text-accent prose-p:text-gray-700 prose-img:w-full prose-img:object-cover prose-img:rounded-2xl lg:max-w-none md:w-4/6 mx-auto mb-20 md:mb-24 xl:mb-32">
+      <h2>What is Pet Blood Work?</h2>
+      <p>
+        Pet blood work is when we take a small blood sample from your pet and test it for things like infections, diseases, organ function, metabolic issues, and normal values for comparison. Blood
+        tests give us important information about your pet's health and help us find problems early.
+      </p>
+
+      <h2>What to Expect During Pet Blood Work</h2>
+
+      <p>
+        A quick, easy blood draw will be done by a skilled vet tech or nurse. Small amounts are taken from a vein, usually the arm for dogs/cats or the leg for birds/reptiles. The samples are labeled
+        and sent to our on-site lab for analysis. We usually get the results within 24 hours. The vet will go over the results with you during a follow-up chat to talk about any issues found and
+        suggested treatments or next steps.
+      </p>
+      <h2>How Pet Blood Work Benefits Your Animal</h2>
+      <p>
+        Complete blood testing helps us find medical conditions before your pet shows any signs. Treating issues early leads to better results. Common things we find include anemia, diabetes, liver or
+        kidney disease, cancers, thyroid problems, blood clotting problems, infections, and more based on the tests we run.
+      </p>
+
+      <p>
+        Having normal values helps us compare with future health changes. Blood work helps diagnose, treat, and monitor with the best care for your pet. Find out what's going on inside your pet with
+        the power of vet lab medicine. Contact us at Vets ASAP to learn more about pet blood testing services.
+      </p>
+    </article>
+  </div>
+  <!-- prettier-ignore -->
+  {{ faq(global.services[11].faqs, "mb-20 md:mb-24 xl:mb-32") }}
+  {% include "partials/formAppointment.html" %} 
+  {% include "partials/vetsasapWellnessClub.html" %}
+  <div id="services" class="container text-center my-20 md:my-24 xl:my-32">
+    <h1 class="text-4xl/none lg:text-5xl font-black mb-12 xl:mb-16">Explore Our Services</h1>
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-6 xl:gap-y-8 -mx-3 xl:-mx-4">
+      {% for service in global.services %}
+      <!-- prettier-ignore -->
+      {% if loop.index != 12 and loop.index >= 7 and loop.index <= 13 %}
+      <div class="sm:w-1/2 lg:w-1/3 flex px-3 xl:px-4">
+        <a href="{{ service.page }}" class="btn btn-lg w-full h-auto flex flex-col justify-start gap-0 font-normal bg-gray-50 border-0 px-6 py-7">
+          <img src="{{ service.icon }}" alt="Cat Sitting" height="64" width="64" class="mx-auto" />
+          <h2 class="text-lg xl:text-xl font-bold mt-4 mb-3">{{ service.title }}</h2>
+          <p class="text-sm xl:text-base text-gray-700 line-clamp-3">{{ service.description }}</p>
+        </a>
+      </div>
+      {% endif %}
+      <!-- prettier-ignore -->
+      {% endfor %}
+    </div>
+    <a href="index.html#services" class="btn lg:btn-lg btn-secondary mt-12 xl:mt-16">Explore more</a>
+  </div>
+</main>
+{% endblock %}

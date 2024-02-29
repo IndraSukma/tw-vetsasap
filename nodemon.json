@@ -1,0 +1,4 @@
+{
+  "watch": ["webpack.config.js", "tailwind.config.js", "./src/data/*.json"],
+  "exec": "webpack-dev-server --mode development"
+}

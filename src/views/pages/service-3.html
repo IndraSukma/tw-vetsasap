@@ -1,0 +1,92 @@
+{% extends "layouts/main.html" %}
+
+<!-- prettier-ignore -->
+{% from "macros/faq.html" import faq %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<main>
+  <div class="container">
+    <div class="breadcrumbs text-sm md:text-base font-semibold mt-28 mb-12 lg:mt-40">
+      <ul>
+        <li><a href="index.html" class="link link-hover hover:link-primary">Home</a></li>
+        <li><a href="index.html#services" class="link link-hover hover:link-primary">Services</a></li>
+        <li><span class="text-gray-500">{{ global.services[2].title }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container flex flex-col md:flex-row-reverse gap-8 md:gap-6 xl:gap-8 mb-20 md:mb-24 xl:mb-32 items-center xl:justify-between">
+    <img src="{{ global.services[2].image }}" alt="{{ global.services[2].image | replace(" @img/services/", "") | replace(".webp", "") | replace("-", " ") | title }}" class="md:w-1/2 object-cover w-full aspect-[4/3] rounded-2xl" />
+    <div class="md:w-1/2 flex flex-col justify-center">
+      <h1 class="text-4xl/none lg:text-5xl font-black">
+        In-Home Pet <br />
+        <span class="text-primary">Wellness Exams</span>
+      </h1>
+      <p class="text-base md:text-sm lg:text-lg text-gray-700 mt-4 mb-8 lg:mt-6 lg:mb-12">
+        Keep your pet healthy and happy, with in-home wellness exams. Your vet will check its vital signs, lifestyle, nutrition, and behavior. Book an appointment today and get a free pet care kit.
+      </p>
+      <a href="#request-appointment" class="btn lg:btn-lg btn-secondary mr-auto">Request appointment</a>
+    </div>
+  </div>
+  <div class="container">
+    <article
+      class="prose lg:prose-lg prose-h2:text-gray-950 prose-h4:text-xl prose-h4:text-accent prose-p:text-gray-700 prose-img:w-full prose-img:object-cover prose-img:rounded-2xl lg:max-w-none md:w-4/6 mx-auto mb-20 md:mb-24 xl:mb-32">
+      <h2>What is a Wellness Exam?</h2>
+      <p>
+        A wellness exam is a routine veterinary visit to thoroughly assess your pet's overall health and well-being. These regular preventive care exams are absolutely crucial for detecting potential
+        issues early before they become major problems. Wellness visits allow your veterinarian to optimize your pet's health and quality of life at every stage.
+      </p>
+      <h2>What to Expect from a Wellness Exam</h2>
+      <p>
+        During an annual or bi-annual wellness exam, your vet will perform a comprehensive nose-to-tail physical examination to evaluate your pet's eyes, ears, mouth, skin and coat, heart, lungs,
+        abdomen, joints, neurological function, weight, and body condition. Your vet will also ask you about any changes in your pet's appetite, water intake, urine and bowel habits, activity levels,
+        and behavior since the last visit. Discussing your pet's lifestyle helps identify any concerning trends that may affect health and wellness.
+      </p>
+      <p>
+        Based on your pet’s risk factors, medical history, and exam findings, your vet may recommend or perform additional preventive diagnostic tests as part of the wellness exam. These can include
+        bloodwork, urinalysis, fecal tests for intestinal parasites, dental evaluations, heartworm tests, tick screens, and vaccine antibody titer tests.
+      </p>
+      <p>
+        You will also discuss updating your pet’s parasite prevention, go over any medication or supplement needs, and administer core vaccines as needed to ensure your pet's immunity stays strong.
+        Guidance on optimal nutrition, weight, dental care, activity levels, and behavioral enrichment can also be provided to support total mind and body health.
+      </p>
+      <h2>How Wellness Exams Benefit Your Pet</h2>
+      <p>
+        Wellness exams provide early disease detection to diagnose conditions before symptoms worsen. This allows for earlier treatment when outcomes are more favorable. Exams also establish health
+        baselines to compare against over time.
+      </p>
+      <p>
+        Preventive care minimizes infectious disease risk and keeps vaccinations current. Discussing lifestyle identifies areas impacting your pet’s wellness, like nutrition, weight, dental health,
+        activity levels, behavior, and more. Our guidance helps optimize every aspect of your pet’s health.
+      </p>
+      <p>
+        Wellness exams strengthen the human-animal bond through care based on specific needs. Increased vet interaction reduces stress during future exams or when illness occurs. Overall, wellness
+        exams lead to improved quality of life and longevity.
+      </p>
+    </article>
+  </div>
+  <!-- prettier-ignore -->
+  {{ faq(global.services[2].faqs, "mb-20 md:mb-24 xl:mb-32") }}
+  {% include "partials/formAppointment.html" %} 
+  {% include "partials/vetsasapWellnessClub.html" %}
+  <div id="services" class="container text-center my-20 md:my-24 xl:my-32">
+    <h1 class="text-4xl/none lg:text-5xl font-black mb-12 xl:mb-16">Explore Our Services</h1>
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-6 xl:gap-y-8 -mx-3 xl:-mx-4">
+      {% for service in global.services %}
+      <!-- prettier-ignore -->
+      {% if loop.index != 3 and loop.index <= 7 %}
+      <div class="sm:w-1/2 lg:w-1/3 flex px-3 xl:px-4">
+        <a href="{{ service.page }}" class="btn btn-lg w-full h-auto flex flex-col justify-start gap-0 font-normal bg-gray-50 border-0 px-6 py-7">
+          <img src="{{ service.icon }}" alt="Cat Sitting" height="64" width="64" class="mx-auto" />
+          <h2 class="text-lg xl:text-xl font-bold mt-4 mb-3">{{ service.title }}</h2>
+          <p class="text-sm xl:text-base text-gray-700 line-clamp-3">{{ service.description }}</p>
+        </a>
+      </div>
+      {% endif %}
+      <!-- prettier-ignore -->
+      {% endfor %}
+    </div>
+    <a href="index.html#services" class="btn lg:btn-lg btn-secondary mt-12 xl:mt-16">Explore more</a>
+  </div>
+</main>
+{% endblock %}

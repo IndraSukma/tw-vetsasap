@@ -1,0 +1,86 @@
+{% extends "layouts/main.html" %}
+
+<!-- prettier-ignore -->
+{% from "macros/faq.html" import faq %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<main>
+  <div class="container">
+    <div class="breadcrumbs text-sm md:text-base font-semibold mt-28 mb-12 lg:mt-40">
+      <ul>
+        <li><a href="index.html" class="link link-hover hover:link-primary">Home</a></li>
+        <li><a href="index.html#services" class="link link-hover hover:link-primary">Services</a></li>
+        <li><span class="text-gray-500">{{ global.services[16].title }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container flex flex-col md:flex-row-reverse gap-8 md:gap-6 xl:gap-8 mb-20 md:mb-24 xl:mb-32 items-center xl:justify-between">
+    <img src="{{ global.services[16].image }}" alt="{{ global.services[16].image | replace(" @img/services/", "") | replace(".webp", "") | replace("-", " ") | title }}" class="md:w-1/2 object-cover w-full aspect-[4/3] rounded-2xl" />
+    <div class="md:w-1/2 flex flex-col justify-center">
+      <h1 class="text-4xl/none lg:text-5xl font-black">
+        Electrocardiogram
+        <span class="text-primary">(ECG)</span>
+      </h1>
+      <p class="text-base md:text-sm lg:text-lg text-gray-700 mt-4 mb-8 lg:mt-6 lg:mb-12">
+        An important diagnostic tool to assess your pet’s health, an ECG measures the electrical activity of the heart and can spot any irregular or abnormal heartbeats. Depending on location, our
+        vets can perform dog and cat ECGs in your home or the Vets ASAP van.
+      </p>
+      <a href="#request-appointment" class="btn lg:btn-lg btn-secondary mr-auto">Request appointment</a>
+    </div>
+  </div>
+  <div class="container">
+    <article
+      class="prose lg:prose-lg prose-h2:text-gray-950 prose-h4:text-xl prose-h4:text-accent prose-p:text-gray-700 prose-img:w-full prose-img:object-cover prose-img:rounded-2xl lg:max-w-none md:w-4/6 mx-auto mb-20 md:mb-24 xl:mb-32">
+      <h2>What is a Pet Electrocardiogram (ECG)?</h2>
+      <p>
+        A pet electrocardiogram, often shortened to ECG, is a vet heart diagnostic procedure that noninvasively tracks the electrical activity of a pet's heart to detect any abnormal rhythm patterns,
+        irregularities, or other disturbances that may indicate underlying disease, inadequate oxygenation, or dysfunction.
+      </p>
+
+      <p>
+        Like a human ECG, this vet technology uses electrode pads placed on the skin surface of the animal’s body to painlessly and safely measure cardiac electrical impulses as they trigger each
+        heartbeat. The impulses are transmitted to an ECG machine, which graphically records the heart rate and how the electrical signals move as tracings on paper or digitally.
+      </p>
+
+      <h2>What to Expect During a Pet ECG</h2>
+
+      <p>
+        During your appointment, we gently place ECG electrode pads on specific areas of your pet's body. The electrodes are connected to our ECG machine while your pet rests comfortably. The ECG
+        traces their heart rhythms and patterns onto a graph. The test is very brief, and most pets are unaffected. Our vet cardiologist reviews the ECG tracing and results in detail with you
+        afterward, explaining any abnormalities and recommending the next steps.
+      </p>
+      <h2>How a Pet ECG Benefits Your Animal</h2>
+      <p>
+        ECGs allow early detection of heart disease like arrhythmias before outward symptoms emerge. Identifying irregular electrical impulses helps diagnose specific conditions causing them. ECGs
+        provide valuable information about the heart's size/shape, valve function, and any heart muscle damage. They establish baseline healthy readings for future monitoring. Overall, ECGs provide
+        key insights into heart health for rapid diagnosis and treatment when necessary. Find out how healthy your pet's heart is with a vet ECG. Contact Vets ASAP to learn more about our cardiology
+        diagnostic services.
+      </p>
+    </article>
+  </div>
+  <!-- prettier-ignore -->
+  {{ faq(global.services[16].faqs, "mb-20 md:mb-24 xl:mb-32") }}
+  {% include "partials/formAppointment.html" %} 
+  {% include "partials/vetsasapWellnessClub.html" %}
+  <div id="services" class="container text-center my-20 md:my-24 xl:my-32">
+    <h1 class="text-4xl/none lg:text-5xl font-black mb-12 xl:mb-16">Explore Our Services</h1>
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-6 xl:gap-y-8 -mx-3 xl:-mx-4">
+      {% for service in global.services %}
+      <!-- prettier-ignore -->
+      {% if loop.index != 17 and loop.index >= 13 and loop.index <= 19 %}
+      <div class="sm:w-1/2 lg:w-1/3 flex px-3 xl:px-4">
+        <a href="{{ service.page }}" class="btn btn-lg w-full h-auto flex flex-col justify-start gap-0 font-normal bg-gray-50 border-0 px-6 py-7">
+          <img src="{{ service.icon }}" alt="Cat Sitting" height="64" width="64" class="mx-auto" />
+          <h2 class="text-lg xl:text-xl font-bold mt-4 mb-3">{{ service.title }}</h2>
+          <p class="text-sm xl:text-base text-gray-700 line-clamp-3">{{ service.description }}</p>
+        </a>
+      </div>
+      {% endif %}
+      <!-- prettier-ignore -->
+      {% endfor %}
+    </div>
+    <a href="index.html#services" class="btn lg:btn-lg btn-secondary mt-12 xl:mt-16">Explore more</a>
+  </div>
+</main>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends "layouts/main.html" %}
+
+<!-- prettier-ignore -->
+{% from "macros/faq.html" import faq %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<main>
+  <div class="container">
+    <div class="breadcrumbs text-sm md:text-base font-semibold mt-28 mb-12 lg:mt-40">
+      <ul>
+        <li><a href="index.html" class="link link-hover hover:link-primary">Home</a></li>
+        <li><a href="index.html#services" class="link link-hover hover:link-primary">Services</a></li>
+        <li><span class="text-gray-500">{{ global.services[6].title }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container flex flex-col md:flex-row-reverse gap-8 md:gap-6 xl:gap-8 mb-20 md:mb-24 xl:mb-32 items-center xl:justify-between">
+    <img src="{{ global.services[6].image }}" alt="{{ global.services[6].image | replace(" @img/services/", "") | replace(".webp", "") | replace("-", " ") | title }}" class="md:w-1/2 object-cover w-full aspect-[4/3] rounded-2xl" />
+    <div class="md:w-1/2 flex flex-col justify-center">
+      <h1 class="text-4xl/none lg:text-5xl font-black">
+        Pet Nutritional
+        <span class="text-primary">Planning</span>
+      </h1>
+      <p class="text-base md:text-sm lg:text-lg text-gray-700 mt-4 mb-8 lg:mt-6 lg:mb-12">
+        Your pet can enjoy a longer and healthier life by staying at a weight that is ideal for them. By feeding your pet well and keeping their weight in check, you can reduce their chances of
+        developing high blood pressure, diabetes, respiratory issues, and more
+      </p>
+      <a href="#request-appointment" class="btn lg:btn-lg btn-secondary mr-auto">Request appointment</a>
+    </div>
+  </div>
+  <div class="container">
+    <article
+      class="prose lg:prose-lg prose-h2:text-gray-950 prose-h4:text-xl prose-h4:text-accent prose-p:text-gray-700 prose-img:w-full prose-img:object-cover prose-img:rounded-2xl lg:max-w-none md:w-4/6 mx-auto mb-20 md:mb-24 xl:mb-32">
+      <h2>What is Pet Nutritional Planning?</h2>
+
+      <p>
+        Pet nutritional planning involves developing customized diet and feeding recommendations for optimal nourishment of your pet based on health status, age, activity level, and specific needs.
+        Proper nutrition is vital for managing weight, energy levels, skin and coat health, disease conditions, longevity and more.
+      </p>
+
+      <h2>What to Expect with Pet Nutritional Planning</h2>
+      <p>
+        During a nutritional planning consultation, we’ll thoroughly assess your pet through examination and diagnostics to understand their unique nutritional requirements. We’ll analyze their
+        current diet and feeding schedule and identify any deficiencies or excesses. Considering health issues, metabolic factors, household logistics and your preferences, we’ll design an optimal
+        nutrition plan. This includes suggested foods, portion sizes, specialized supplements and treats, feeding techniques, and dietary schedule. We partner with you on any transition needed to the
+        new diet. Follow-ups help fine-tune the plan as needed.
+      </p>
+      <h2>How Pet Nutritional Planning Benefits Your Pet</h2>
+
+      <p>
+        Customized nutrition tailored to your pet’s needs, rather than general pet food labels, allows their body to function and heal optimally. Nutrition plans help pets lose weight safely, manage
+        conditions like diabetes or kidney disease, improve skin/coat, adjust energy levels, support longevity and more. We ensure your pet’s food supports their health status so they can thrive. We
+        also educate you on how to make the best nutritional choices for your pet.
+      </p>
+      <p>Get started with science-based, veterinarian-formulated nutritional planning tailored to your beloved pet's needs for optimal health and longevity.</p>
+    </article>
+  </div>
+  <!-- prettier-ignore -->
+  {{ faq(global.services[6].faqs, "mb-20 md:mb-24 xl:mb-32") }}
+  {% include "partials/formAppointment.html" %} 
+  {% include "partials/vetsasapWellnessClub.html" %}
+  <div id="services" class="container text-center my-20 md:my-24 xl:my-32">
+    <h1 class="text-4xl/none lg:text-5xl font-black mb-12 xl:mb-16">Explore Our Services</h1>
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-6 xl:gap-y-8 -mx-3 xl:-mx-4">
+      {% for service in global.services %}
+      <!-- prettier-ignore -->
+      {% if loop.index != 7 and loop.index >= 7 and loop.index <= 13 %}
+      <div class="sm:w-1/2 lg:w-1/3 flex px-3 xl:px-4">
+        <a href="{{ service.page }}" class="btn btn-lg w-full h-auto flex flex-col justify-start gap-0 font-normal bg-gray-50 border-0 px-6 py-7">
+          <img src="{{ service.icon }}" alt="Cat Sitting" height="64" width="64" class="mx-auto" />
+          <h2 class="text-lg xl:text-xl font-bold mt-4 mb-3">{{ service.title }}</h2>
+          <p class="text-sm xl:text-base text-gray-700 line-clamp-3">{{ service.description }}</p>
+        </a>
+      </div>
+      {% endif %}
+      <!-- prettier-ignore -->
+      {% endfor %}
+    </div>
+    <a href="index.html#services" class="btn lg:btn-lg btn-secondary mt-12 xl:mt-16">Explore more</a>
+  </div>
+</main>
+{% endblock %}

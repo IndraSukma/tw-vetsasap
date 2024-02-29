@@ -1,0 +1,89 @@
+{% extends "layouts/main.html" %}
+
+<!-- prettier-ignore -->
+{% from "macros/faq.html" import faq %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<main>
+  <div class="container">
+    <div class="breadcrumbs text-sm md:text-base font-semibold mt-28 mb-12 lg:mt-40">
+      <ul>
+        <li><a href="index.html" class="link link-hover hover:link-primary">Home</a></li>
+        <li><a href="index.html#services" class="link link-hover hover:link-primary">Services</a></li>
+        <li><span class="text-gray-500">{{ global.services[1].title }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container flex flex-col md:flex-row-reverse gap-8 md:gap-6 xl:gap-8 mb-20 md:mb-24 xl:mb-32 items-center xl:justify-between">
+    <img src="{{ global.services[1].image }}" alt="{{ global.services[1].image | replace(" @img/services/", "") | replace(".webp", "") | replace("-", " ") | title }}" class="md:w-1/2 object-cover w-full aspect-[4/3] rounded-2xl" />
+    <div class="md:w-1/2 flex flex-col justify-center">
+      <h1 class="text-4xl/none lg:text-5xl font-black">
+        In-Home <br />
+        <span class="text-primary">Sick Pet Visit</span>
+      </h1>
+      <p class="text-base md:text-sm lg:text-lg text-gray-700 mt-4 mb-8 lg:mt-6 lg:mb-12">
+        Your pet deserves the best care possible, especially when they are sick. That’s why our mobile vets bring the clinic to your home, saving you time and hassle. Contact us now and let us help
+        your dog or cat feel better.
+      </p>
+      <a href="#request-appointment" class="btn lg:btn-lg btn-secondary mr-auto">Request appointment</a>
+    </div>
+  </div>
+  <div class="container">
+    <article
+      class="prose lg:prose-lg prose-h2:text-gray-950 prose-h4:text-xl prose-h4:text-accent prose-p:text-gray-700 prose-img:w-full prose-img:object-cover prose-img:rounded-2xl lg:max-w-none md:w-4/6 mx-auto mb-20 md:mb-24 xl:mb-32">
+      <h2>What is a Sick Visit?</h2>
+      <p>
+        A sick visit, also known as an illness exam, is when you take your pet to the vet because they are showing new or concerning symptoms. Getting timely care for our sick furry friends is super
+        important for many reasons - to ease their pain, figure out the best treatment, stop minor issues from becoming major emergencies, improve their chances of recovery, and get them back to
+        normal.
+      </p>
+      <h2>What to Expect from a Sick Visit</h2>
+      <p>During a sick visit for your dog, cat, or other pet, the vet will do a focused physical exam to check out the specific signs of illness that you reported when you made the appointment.</p>
+      <p>
+        For example, if your pet has symptoms like vomiting, diarrhea, lack of appetite, and lethargy, and you think they might have a stomach bug - the vet will listen to their belly, feel their
+        intestines, and see how hydrated they are. Or if your pet is limping on one leg, the vet will examine their joints, bones, and muscles carefully.
+      </p>
+      <p>Based on what they find in the exam and the history of changes and symptoms that you give them; your vet may suggest doing some tests to find out the exact cause and make a diagnosi</p>
+      <p>
+        Tests like bloodwork, urinalysis, stool or skin samples, x-rays, ultrasounds, or other scans can help us pinpoint problems that we can't see with our eyes alone. With a diagnosis in hand, your
+        vet can tell you the best treatment plan, which may include medications, special foods, rest, physical therapy, fluids, or other steps to help your pet feel better fast.
+      </p>
+      <p>
+        At the end of a sick visit, you will go home with clear instructions for any treatments, foods or supplements that your vet prescribed, dates for follow-up exams, and what signs to watch for.
+        If your pet's symptoms get worse or don't improve, let your vet know right away so they can make changes. The goal is to relieve your pet's discomfort, fix the problem completely, prevent it
+        from coming back, and avoid any complications or progression as much as possible.
+      </p>
+      <h2>How Sick Visits Benefit Your Pet</h2>
+      <p>
+        Early diagnosis of illness lets us start treatment right away before things get worse, which leads to better outcomes. Finding out the cause of symptoms through testing guides us to use the
+        most effective therapy. Quick care reduces suffering and avoids the need for more invasive steps that may be needed if left untreated. Sick visits also give us a better picture of your pet's
+        health, history and needs.
+      </p>
+    </article>
+  </div>
+  <!-- prettier-ignore -->
+  {{ faq(global.services[1].faqs, "mb-20 md:mb-24 xl:mb-32") }}
+  {% include "partials/formAppointment.html" %} 
+  {% include "partials/vetsasapWellnessClub.html" %}
+  <div id="services" class="container text-center my-20 md:my-24 xl:my-32">
+    <h1 class="text-4xl/none lg:text-5xl font-black mb-12 xl:mb-16">Explore Our Services</h1>
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-6 xl:gap-y-8 -mx-3 xl:-mx-4">
+      {% for service in global.services %}
+      <!-- prettier-ignore -->
+      {% if loop.index != 2 and loop.index <= 7 %}
+      <div class="sm:w-1/2 lg:w-1/3 flex px-3 xl:px-4">
+        <a href="{{ service.page }}" class="btn btn-lg w-full h-auto flex flex-col justify-start gap-0 font-normal bg-gray-50 border-0 px-6 py-7">
+          <img src="{{ service.icon }}" alt="Cat Sitting" height="64" width="64" class="mx-auto" />
+          <h2 class="text-lg xl:text-xl font-bold mt-4 mb-3">{{ service.title }}</h2>
+          <p class="text-sm xl:text-base text-gray-700 line-clamp-3">{{ service.description }}</p>
+        </a>
+      </div>
+      {% endif %}
+      <!-- prettier-ignore -->
+      {% endfor %}
+    </div>
+    <a href="index.html#services" class="btn lg:btn-lg btn-secondary mt-12 xl:mt-16">Explore more</a>
+  </div>
+</main>
+{% endblock %}

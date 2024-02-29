@@ -1,0 +1,83 @@
+{% extends "layouts/main.html" %}
+
+<!-- prettier-ignore -->
+{% from "macros/faq.html" import faq %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<main>
+  <div class="container">
+    <div class="breadcrumbs text-sm md:text-base font-semibold mt-28 mb-12 lg:mt-40">
+      <ul>
+        <li><a href="index.html" class="link link-hover hover:link-primary">Home</a></li>
+        <li><a href="index.html#services" class="link link-hover hover:link-primary">Services</a></li>
+        <li><span class="text-gray-500">{{ global.services[7].title }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container flex flex-col md:flex-row-reverse gap-8 md:gap-6 xl:gap-8 mb-20 md:mb-24 xl:mb-32 items-center xl:justify-between">
+    <img src="{{ global.services[7].image }}" alt="{{ global.services[7].image | replace(" @img/services/", "") | replace(".webp", "") | replace("-", " ") | title }}" class="md:w-1/2 object-cover w-full aspect-[4/3] rounded-2xl" />
+    <div class="md:w-1/2 flex flex-col justify-center">
+      <h1 class="text-4xl/none lg:text-5xl font-black text-primary">Vaccination</h1>
+      <p class="text-base md:text-sm lg:text-lg text-gray-700 mt-4 mb-8 lg:mt-6 lg:mb-12">
+        Dog and cat vaccines are part of providing essential, preventative care for your pet’s long-term health and well-being. We offer all essential and optional vaccines for your pet at your place.
+      </p>
+      <a href="#request-appointment" class="btn lg:btn-lg btn-secondary mr-auto">Request appointment</a>
+    </div>
+  </div>
+  <div class="container">
+    <article
+      class="prose lg:prose-lg prose-h2:text-gray-950 prose-h4:text-xl prose-h4:text-accent prose-p:text-gray-700 prose-img:w-full prose-img:object-cover prose-img:rounded-2xl lg:max-w-none md:w-4/6 mx-auto mb-20 md:mb-24 xl:mb-32">
+      <h2>What are Pet Vaccinations?</h2>
+      <p>
+        Pet vaccinations protect your dog, cat, or exotic companion from highly contagious and potentially fatal diseases. Like human vaccines, they expose the body to weakened or modified versions of
+        disease-causing agents to trigger long-lasting immunity. Core vaccines are vital for every pet based on risk factors.
+      </p>
+
+      <h2>What to Expect During Pet Vaccinations</h2>
+
+      <p>
+        During your visit, a vet or tech will give injectable or nasal drop vaccines based on your pet’s age, health status, lifestyle risk, and vaccination history. We log the vaccines, batch, and
+        expiration in your pet’s medical record. Pets are checked for any possible allergic reactions before discharge. With our reminders, you won’t miss important booster vaccines, as immunity
+        naturally decreases over time. Expect a fast, simple, and positive experience!
+      </p>
+
+      <h2>How Vaccinations Benefit Your Pet</h2>
+      <p>
+        Vaccines help build immune defenses against catchy diseases like parvovirus, rabies, panleukopenia, calicivirus, Lyme disease, leukemia, and more based on your pet's individual risks. Some
+        diseases are untreatable and quickly fatal if contracted.
+      </p>
+
+      <p>
+        Core vaccines protect at both individual and community levels when vaccination rates are maintained. Even indoor pets can be exposed. Staying current on vaccines keeps your pet healthy and
+        reduces serious preventable disease outbreaks.
+      </p>
+
+      <p>Vaccinate your pets on time - their health and safety depend on it. Contact us at Vetsasap today to make sure your pet’s immunity is fully protected!</p>
+    </article>
+  </div>
+  <!-- prettier-ignore -->
+  {{ faq(global.services[7].faqs, "mb-20 md:mb-24 xl:mb-32") }}
+  {% include "partials/formAppointment.html" %} 
+  {% include "partials/vetsasapWellnessClub.html" %}
+  <div id="services" class="container text-center my-20 md:my-24 xl:my-32">
+    <h1 class="text-4xl/none lg:text-5xl font-black mb-12 xl:mb-16">Explore Our Services</h1>
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-6 xl:gap-y-8 -mx-3 xl:-mx-4">
+      {% for service in global.services %}
+      <!-- prettier-ignore -->
+      {% if loop.index != 8 and loop.index >= 7 and loop.index <= 13 %}
+      <div class="sm:w-1/2 lg:w-1/3 flex px-3 xl:px-4">
+        <a href="{{ service.page }}" class="btn btn-lg w-full h-auto flex flex-col justify-start gap-0 font-normal bg-gray-50 border-0 px-6 py-7">
+          <img src="{{ service.icon }}" alt="Cat Sitting" height="64" width="64" class="mx-auto" />
+          <h2 class="text-lg xl:text-xl font-bold mt-4 mb-3">{{ service.title }}</h2>
+          <p class="text-sm xl:text-base text-gray-700 line-clamp-3">{{ service.description }}</p>
+        </a>
+      </div>
+      {% endif %}
+      <!-- prettier-ignore -->
+      {% endfor %}
+    </div>
+    <a href="index.html#services" class="btn lg:btn-lg btn-secondary mt-12 xl:mt-16">Explore more</a>
+  </div>
+</main>
+{% endblock %}

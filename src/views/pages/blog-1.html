@@ -1,0 +1,164 @@
+{% extends "layouts/main.html" %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<main>
+  <div class="container">
+    <div class="breadcrumbs text-sm md:text-base font-semibold mt-28 mb-12 lg:mt-40">
+      <ul>
+        <li><a href="index.html" class="link link-hover hover:link-primary">Home</a></li>
+        <li><a href="index.html#blog" class="link link-hover hover:link-primary">Blog</a></li>
+        <li><span class="text-gray-500">{{ global.blogs[0].title }}</span></li>
+      </ul>
+    </div>
+    <img src="{{ global.blogs[0].image }}" alt="Blog" class="md:w-5/6 mx-auto aspect-[5/3] object-cover rounded-2xl" />
+    <div class="md:w-4/6 mx-auto mt-8 lg:mt-12 mb-20 md:mb-24 xl:mb-32">
+      <h1 class="text-3xl lg:text-5xl text-primary font-black mb-12 lg:mb-16">{{ global.blogs[0].title }}</h1>
+      <article class="prose lg:prose-lg prose-h2:text-gray-950 prose-h4:text-xl prose-h4:text-accent prose-p:text-gray-700 prose-img:w-full prose-img:object-cover prose-img:rounded-2xl lg:max-w-none">
+        <p>
+          If you need someone to come into your home and care for your beloved furry family members while you're away, you want to find a trustworthy and reliable service. But with so many options out
+          there for pet care assistance, how do you choose the right one for your needs?
+        </p>
+        <p>
+          This guide will explore the benefits of in-home pet care, what to look for in a qualified service, key questions to ask, and tips to ensure you select a provider that aligns with your needs
+          and gives your pets the best care possible.
+        </p>
+        <h2>Why Consider In-Home Pet Care?</h2>
+        <img src="@img/blog/yoga-with-dog.webp" alt="Yoga with Dog" />
+        <p>In-home pet care, where a professional pet sitter comes to your home to care for your animals in their familiar home environment, offers some great advantages:</p>
+        <h4>Reduced Stress</h4>
+        <p>Many pets experience significant anxiety and stress when they leave home to stay at a kennel or vet's office. In-home care allows your pet to stay comfortable in their own space.</p>
+        <h4>Health Benefits</h4>
+        <p>
+          Avoiding stressful boarding kennels can benefit pet health, especially for elderly or anxious animals. In-home care may also be necessary for pets with health issues that require special
+          attention.
+        </p>
+        <h4>One-on-One Attention</h4>
+        <p>In-home caretakers can provide dedicated one-on-one attention, care, and affection to your pet, unlike boarding facilities where staff have to juggle many pets.</p>
+        <h4>Maintain Routines</h4>
+        <p>Keeping pets in their home environment and schedules maintains a sense of normalcy and stability for important routines like feedings, exercise, playtime, etc</p>
+        <h4>Home Security</h4>
+        <p>Having a caretaker regularly check on your home provides peace of mind and may deter crime while you're away.</p>
+        <h4>Flexible Scheduling</h4>
+        <p>In-home pet care offers more flexibility to book last-minute or extended services than boarding kennels, which have rigid check-in/check-out policies.</p>
+        <h4>Welcoming Other Service Providers</h4>
+        <p>Pet sitters can admit other service providers into your home while you're away, such as contractors, lawn care, house cleaners, etc.</p>
+        <p>For minimizing disruption and keeping your pet happy and healthy, in-home pet care can be an excellent option!</p>
+        <h2>What to Look for in an In-Home Pet Care Provider</h2>
+        <img src="@img/blog/puppy-on-sweater.webp" alt="Puppy on Sweater" />
+        <h4>Experience and Comfort Working with Animals</h4>
+        <p>
+          Ideally, choose sitters who have extensive experience in caring for pets and are comfortable handling medical needs, behaviors, feeding, medications, and animal first aid. Veterinary
+          technician credentials are a plus!
+        </p>
+        <h4>Thorough Pet Care Training</h4>
+        <p>
+          Reputable services thoroughly train all staff to follow established protocols for pet care tasks, home entry/exit, emergency response, and more. Rigorous procedures ensure consistency and
+          quality.
+        </p>
+        <h4>Attention to Safety</h4>
+        <p>The provider should conduct background checks and vet all staff. Ensure that they are adequately insured and bonded to protect you legally. Look for proactive safety measures as well.</p>
+        <h4>Communication</h4>
+        <p>
+          Find a service that is highly communicative before, during, and after service. Look for responsiveness in scheduling, answering questions, providing photo updates, and submitting detailed
+          visit reports.
+        </p>
+        <h4>Senior Pet Experience</h4>
+        <p>If you have geriatric or special needs pets, seek out providers with specific senior pet care training to meet their health and mobility considerations.</p>
+        <h4>A Caring Approach</h4>
+        <p>The right provider will display genuine compassion and care when interacting with clients and pets. Look for non-rushed consultations and attention to pet personalities and preferences.</p>
+        <h4>Reasonable Policies</h4>
+        <p>Review policies around cancellation, medications, key handling, inclement weather, and emergencies to ensure they work for you. Look for flexibility when reasonable.</p>
+        <h4>Strong Reputation</h4>
+        <p>Check the reviews and testimonials from past clients to gauge satisfaction. Reputable sitters earn consistently glowing recommendations.</p>
+        <h4>Trustworthy Staff</h4>
+        <p>All staff who enter homes should be screened, professional, trained, and fully accountable for their actions. Trust is a must!</p>
+        <p>Choosing an in-home provider that checks all these boxes gives you reassurance while away!</p>
+        <h2>Key Questions to Ask Before Booking</h2>
+        <p>Choosing an in-home provider that checks all these boxes gives you reassurance while away!</p>
+        <h4>Are All Your Staff Pet First Aid/CPR Certified?</h4>
+        <p>This critical training prepares them to properly respond in an emergency situation. At a minimum, main caretakers should be certified.</p>
+        <h4>What is Your Staff Screening Process?</h4>
+        <p>Reputable services conduct intensive background checks, interviews, and reference checks to ensure responsible pet care providers who will respect your home.</p>
+        <h4>Do You Have Detailed Service Protocols and Training?</h4>
+        <p>Established service protocols for feeding, medications, exercise, communication, etc., ensure consistency and quality. Ongoing training is a must to refresh skills.</p>
+        <h4>Are You Insured and Bonded?</h4>
+        <p>This protects you from liability if a pet or home accident occurs. Verify appropriate business insurance coverage.</p>
+        <h4>What is Your Contingency or Backup Plan?</h4>
+        <p>Get details on their protocols if a scheduled caretaker cannot make a visit due to illness, emergency, or inclement weather.</p>
+        <h4>How Will You Maintain Open Communication?</h4>
+        <p>Clarify expectations for daily update photos, text messaging access, report cards after visits, etc., to stay informed</p>
+        <p>Doing your due diligence ensures you select a pet sitter that meets your needs and provides exemplary in-home care.</p>
+        <h2>Tips for Evaluating an In-Home Pet Care Service</h2>
+        <p>Follow these tips when researching providers:</p>
+        <h4>Search Pet Sitter Directories</h4>
+        <p>Directory sites like PetSits.com allow you to search local sitters by location, experience, and services offered. Review profile details and qualifications</p>
+        <h4>Professional Affiliations Matter</h4>
+        <p>Look for providers who belong to associations like Pet Sitters International (PSI), which require adherence to industry best practices on safety, training, and ethics.</p>
+        <h4>Meet for a Consultation</h4>
+        <p>Many services offer free in-home consultations to meet you and your pets before booking. This is invaluable for getting to know them and assessing their compatibility.</p>
+        <h4>Do a Trial Run First</h4>
+        <p>Consider booking a trial day or overnight service before an extended booking so you can evaluate their service and see how your pets react.</p>
+        <h4>Read Reviews</h4>
+        <p>Check Google/Yelp ratings and browse website testimonials. Many satisfied clients validate quality care and professionalism.</p>
+        <h4>Ask for References</h4>
+        <p>Speaking to past clients provides useful insights into their pet care competence, friendliness, communication, and trustworthiness.</p>
+        <h4>Confirm Policies</h4>
+        <p>Review policies on scheduling, cancellations, emergencies, keys, medications, and more to ensure they align with your needs and comfort level.</p>
+        <h4>Trust Your Gut</h4>
+        <p>Go with your instincts during consultations and initial interactions. Your pets' well-being is paramount, so any red flags warrant caution.</p>
+        <p>GDoing diligent research sets you up for success in partnering with an in-home pet care service that meets your needs!</p>
+        <h2>Indicators of a High-Quality In-Home Pet Care Provide</h2>
+        <img src="@img/blog/woman-holding-brown-cat.webp" alt="Woman Holding Brown Cat" />
+        <p>Signs that suggest you have found an excellent pet sitter include:</p>
+        <ul>
+          <li>Deep experience caring for all types of pets, including special needs</li>
+          <li>Contingency backup plans if a sitter cannot make a scheduled visit</li>
+          <li>Thorough home consultation and pet introductions</li>
+          <li>Careful adherence to your care instructions and home rules</li>
+          <li>Regular updates with photos, texts, or written report cards after every visit</li>
+          <li>Employment and training of staff in proper pet first aid</li>
+          <li>Simple sign-in/sign-out logs and prompt return of house keys</li>
+          <li>Genuine affection and patience for your pets</li>
+          <li>Bonding and insurance for protection and accountability</li>
+          <li>Outstanding references and reviews</li>
+          <li>Prioritizing these indicators will help you identify the premier in-home pet care option for providing the best care possible when you can't be home!</li>
+        </ul>
+        <p>Prioritizing these indicators will help you identify the premier in-home pet care option for providing the best care possible when you can't be home!</p>
+        <h2>Partner with Vets ASAP for Unparalleled In-Home Pet Care</h2>
+        <p>
+          Vets ASAP sets the highest standard for fully customized, compassionate home pet care. Our experienced team of pet lovers treats you like family while providing insider care as you would
+          yourself.
+        </p>
+        <img src="@img/blog/woman-hugging-dog.webp" alt="Woman Dog" />
+        <h4>Why Vets ASAP Stands Out</h4>
+        <ul>
+          <li>Our pet sitters are rigorously screened and trained above and beyond the industry standard. You can trust us fully.</li>
+          <li>We are meticulous about following your detailed instructions to maintain your pets' routines, diet, exercise, and care.</li>
+          <li>Our team is available for daily visits or 24-hour care - perfect for extended travel.</li>
+          <li>We gladly administer medications, handle mobility issues, manage behaviors, and assist with grooming - whatever your pets' needs are.</li>
+          <li>Our vet tech expertise allows us to monitor health closely and respond to issues properly.</li>
+          <li>We provide photo updates, detailed visit recaps, and an open line of communication 24/7.</li>
+        </ul>
+        <p>
+          Let Vets ASAP make pet care, home care, and pet transportation completely stress-free, whether you're away for a quick trip or a month-long adventure. Experience our passion for pets
+          firsthand - contact us today to get started!
+        </p>
+        <h2>Key Takeaways on Choosing In-Home Pet Care</h2>
+        <ul>
+          <li>In-home pet sitting reduces stress, maintains health, and provides dedicated one-on-one attention for your pets compared to boarding options.</li>
+          <li>Look for experienced, compassionate providers with rigorous training, protocols, screening, and pet first aid competency when selecting a service.</li>
+          <li>Ask questions upfront about staffing, safety, communication, and emergency response to determine a good fit.</li>
+          <li>Indicators of high-quality providers include glowing references, professional affiliations, thorough consultations, and training standards.</li>
+          <li>Do a trial run with a day or overnight booking before extended services to evaluate care.</li>
+          <li>Partnering with reputable, trustworthy pet sitters gives you ultimate peace of mind while traveling or away.</li>
+        </ul>
+        <p>
+          Knowing your pets are being cared for by a qualified, loving caretaker in the comfort of your home makes any trip better. Use these tips to choose the ideal pet sitter to meet your needs!
+        </p>
+      </article>
+    </div>
+  </div>
+  {% include "partials/formAppointment.html" %}
+</main>
+{% endblock %}

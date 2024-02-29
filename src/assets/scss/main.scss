@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-bold normal-case;
+  }
+
+  .btn,
+  .btn-md,
+  .input,
+  .input-md {
+    @apply min-h-[2.5rem] h-10;
+  }
+
+  .btn-xs,
+  .input-xs {
+    @apply min-h-6 h-6 rounded-md;
+  }
+
+  .btn-sm,
+  .input-sm {
+    @apply min-h-8 h-8 rounded-lg;
+  }
+
+  .btn-lg,
+  .input-lg {
+    @apply min-h-12 h-12 rounded-xl;
+  }
+
+  .input,
+  .input-md {
+    @apply text-sm;
+  }
+
+  .input-lg {
+    @apply text-base px-5;
+  }
+
+  .textarea,
+  .textarea-md {
+    @apply text-sm py-2.5;
+  }
+
+  .textarea-xs {
+    @apply py-0.5;
+  }
+
+  .textarea-sm {
+    @apply py-1.5;
+  }
+
+  .textarea-lg {
+    @apply text-base px-5 py-3;
+  }
+
+  .label {
+    @apply px-0 font-semibold;
+  }
+
+  .menu {
+    @apply text-base font-semibold;
+  }
+
+  @media (hover: hover) {
+    :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(.active):hover {
+      @apply bg-transparent text-primary;
+    }
+  }
+
+  :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(summary):not(.active):focus {
+    @apply bg-transparent text-primary;
+  }
+
+  .menu li > *:not(ul):not(.menu-title):not(details):active {
+    @apply bg-transparent text-inherit;
+  }
+
+  .menu li:not(.disabled) > *:not(ul):not(.menu-title):not(details):active {
+    @apply text-primary;
+  }
+
+  .btn:is(input[type="checkbox"]:checked).collapsible-trigger {
+    @apply btn-secondary;
+  }
+
+  .btn:is(input[type="checkbox"]).collapsible-trigger::after {
+    --tw-content: attr(data-label-off);
+  }
+
+  .btn:is(input[type="checkbox"]:checked).collapsible-trigger::after {
+    --tw-content: attr(data-label-on);
+  }
+
+  .modal .btn-close-modal {
+    @apply scale-90;
+  }
+
+  .modal[open] .btn-close-modal {
+    @apply scale-100;
+  }
+
+  .breadcrumbs > ul > li + *:before,
+  .breadcrumbs > ol > li + *:before {
+    @apply h-1.5 w-1.5 md:h-2 md:w-2 border-t-2 border-r-2 opacity-100;
+  }
+
+  .swiper,
+  swiper-container {
+    @apply overflow-visible;
+  }
+}
+
+@layer utilities {
+  .icon-filled {
+    font-variation-settings: "FILL" 1;
+  }
+}

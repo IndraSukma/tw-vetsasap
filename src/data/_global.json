@@ -1,0 +1,643 @@
+{
+  "appName": "VetsASAP - Mobile Veterinary Care",
+  "services": [
+    {
+      "icon": " @img/icon/cat.svg",
+      "image": " @img/services/person-holding-a-cat.webp",
+      "title": "Puppy and Kitten Wellness",
+      "page": "service-1.html",
+      "description": "Your puppy or kitten deserves the best start in life, and that is why we offer comprehensive wellness visits to support their health and happiness. Our wellness visits include physical exams, vaccinations, parasite prevention, and much more.",
+      "faqs": [
+        {
+          "question": "How often does my new puppy or kitten need to see the vet?",
+          "answer": "At least every 3–4 weeks for vaccine boosters from 6–16 weeks old. Then visits every 6 months up to 1 year old."
+        },
+        {
+          "question": "What vaccines and procedures are included?",
+          "answer": "Core vaccines like rabies, DHPP, and FVRCP plus deworming and flea, tick, and heartworm prevention. Spay/neuter can be done at around 5–6 months old"
+        },
+        {
+          "question": "What is the typical cost for routine puppy/kitten wellness?",
+          "answer": "The exam fee depends on the location. Additional services like vaccines or testing are priced separately. Wellness packages allow bundling services at a discount."
+        },
+        {
+          "question": "What if I adopt an older rescue puppy or kitten?",
+          "answer": "We tailor vaccine and deworming schedules based on known history and diagnostic testing to get them up to date on care."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/chat.svg",
+      "image": " @img/services/puppy-lying-on-brown-textile.webp",
+      "title": "Sick Visit",
+      "page": "service-2.html",
+      "description": "Your pet deserves the best care possible, especially when they are sick. That’s why our mobile vets bring the clinic to your home, saving you time and hassle. Contact us now and let us help your dog or cat feel better.",
+      "faqs": [
+        {
+          "question": "How soon should I schedule a sick visit?",
+          "answer": "Call us as soon as your pet shows new symptoms or seems in pain. The sooner we see them, the better for diagnosing and treating their illness."
+        },
+        {
+          "question": "What's the difference between a sick visit and an emergency?",
+          "answer": "Emergencies like trauma, heavy bleeding, trouble breathing, or sudden symptoms need immediate ER attention. Sick visits are for milder symptoms that get worse over time."
+        },
+        {
+          "question": "How much does a regular sick visit cost?",
+          "answer": "The basic exam fee depends on your location Any extra tests or medications are priced separately. We have package deals to make care more affordable."
+        },
+        {
+          "question": "Should I skip feeding my pet before a sick visit?",
+          "answer": "It depends on the symptoms. Follow our guidelines when you book so we can tell you what to do before the visit."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/wellness-exam.svg",
+      "image": " @img/services/dog-having-medical-check-up.webp",
+      "title": "Wellness Exams",
+      "page": "service-3.html",
+      "description": "Keep your pet healthy and happy, with in-home wellness exams. Your vet will check its vital signs, lifestyle, nutrition, and behavior. Book an appointment today and get a free pet care kit.",
+      "faqs": [
+        {
+          "question": "How often should my pet get a wellness exam?",
+          "answer": "For dogs & cats, we recommend annual wellness exams starting at one year old and then increasing to twice-yearly senior exams around age seven. Puppies and kittens need more frequent visits for vaccination boosters until they are fully immunized around four months old."
+        },
+        {
+          "question": "What is included in your wellness exam service?",
+          "answer": "A nose-to-tail physical exam, health consultation, weight check, heart/lung evaluation, dental and coat assessment, abdominal palpation, temperature check, vaccination review, parasite prevention discussion, and personalized health plan."
+        },
+        {
+          "question": "How much does a routine wellness exam cost?",
+          "answer": "Our base exam fee depends on the location. Additional services like bloodwork or medication refills are priced separately. We offer wellness exam packages to bundle frequently requested services for added savings."
+        },
+        {
+          "question": "Do I need an appointment for my pet’s wellness visit?",
+          "answer": "Yes, appointments are required for all wellness exams so we can allot enough time to provide comprehensive care without feeling rushed."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/pet-inside-heart.svg",
+      "image": " @img/services/person-holding-dog.webp",
+      "title": "In-Home Pet Euthanasia",
+      "page": "service-4.html",
+      "description": "If your pet is nearing the end of their life, you deserve to have a caring and honest conversation with one of our compassionate veterinarians. They will help you assess your pet's quality of life and guide you through the best options for a peaceful farewell. Contact us today and let us support you and your pet in this difficult time.",
+      "faqs": [
+        {
+          "question": "Is in-home pet euthanasia for emergencies?",
+          "answer": "In-home pet euthanasia is specifically for scheduled, planned situations when a difficult decision must be made to end a terminally ill or severely suffering pet's life. Because the veterinarian visits your home to perform euthanasia, this service cannot accommodate true veterinary emergency situations requiring immediate, urgent euthanasia. If your pet experiences a traumatic medical crisis like severe injuries, life-threatening symptoms, or an emergency condition requiring swift action, please seek in-person emergency veterinary care right away rather than waiting for an at-home euthanasia appointment. We understand these difficult situations are unpredictable - our clinic's emergency services can provide urgent euthanasia whenever needed."
+        },
+        {
+          "question": "What are the costs?",
+          "answer": "Our standard base fee for providing in-home pet euthanasia depends on location. This cost includes the veterinarian's time and professional medical expertise during the at-home visit, as well as the euthanasia drugs administered. There are also additional charges for supplemental services or keepsake items you may wish to choose, like cremation, paw print impressions, memorial clay paw prints, private cremation urns, ink prints of nose/paw, hair clippings, or other mementos. Please don't hesitate to ask us for complete pricing details on all our end-of-life and aftercare options so you can plan accordingly."
+        },
+        {
+          "question": "Should my other pets be present?",
+          "answer": "It's a personal decision. Some pets understand what is happening and benefit from inclusion. Others may become distressed and need isolation. We can advise you based on your pets' bonds and temperaments."
+        },
+        {
+          "question": "How can I prepare my family?",
+          "answer": "Honest communication, reminiscing about positive memories, accommodating individual coping styles, and planning meaningful last days together help families prepare. We provide additional grief support resources."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/video-consultation.svg",
+      "image": " @img/services/working-on-laptop-near-dog.webp",
+      "title": "Virtual Vet Visit",
+      "page": "service-5.html",
+      "description": "Don’t let your pet suffer in silence, get instant online access to a licensed veterinarian that can answer your questions about your pet’s health, behavior, or nutrition. Whether you need a follow-up consultation or a second opinion, our telemedicine service is here for you. Book now and give the best care to your furry friend.",
+      "faqs": [
+        {
+          "question": "Are virtual vet visits secure?",
+          "answer": "Absolutely, you can rest assured that our virtual vet consultations are conducted on a highly secure platform that uses end-to-end encryption and rigorous data protection protocols to maintain complete confidentiality regarding your pet's medical information. No sensitive details are ever shared without your express consent. You and your veterinarian will have a private virtual room where you can feel 100% comfortable openly discussing your concerns, diagnoses, treatments, or any other aspects regarding your pet's health during video chat or over the phone."
+        },
+        {
+          "question": "What conditions are virtual vets able to treat?",
+          "answer": "Minor illnesses, medication refills, chronic disease management, pre-and post-surgery checks, medication reactions, and second opinions. Emergencies require in-clinic evaluation."
+        },
+        {
+          "question": "How do I schedule a virtual vet visit?",
+          "answer": "Easily book online 24/7 or call during business hours, and we'll find a time convenient for you."
+        },
+        {
+          "question": "What is the typical virtual vet visit fee?",
+          "answer": "Our standard fee depends on virtual vet visit, allowing 10-15 minutes of veterinary advice and follow-up. Additional time or services are available at an additional cost."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/health-records.svg",
+      "image": " @img/services/pomeranian-getting-checked.webp",
+      "title": "Quality-of-Life Consultation",
+      "page": "service-6.html",
+      "description": "Your pet deserves the best care, especially when they are getting old or sick. That's why we offer Quality of Life Care services, which include gentle consultations and end-of-life services for pets at your place. Contact us now and we'll help you through this tough time.",
+      "faqs": [
+        {
+          "question": "Should I schedule an urgent consultation if my pet seems to be in crisis?",
+          "answer": "Yes, please contact us right away in those situations so we can advise on emergency options and fast-track an appointment."
+        },
+        {
+          "question": "What signs indicate a declining quality of life in a pet?",
+          "answer": "Drastic changes in mobility, personality, appetite, alertness, and engagement often signal a deterioration in well-being. We assess these holistically during the consultation."
+        },
+        {
+          "question": "What if I'm still undecided afterward about the next steps?",
+          "answer": "That's understandable. We can schedule follow-ups to reassess your pet’s condition and support you through the decision process until clarity is reached."
+        },
+        {
+          "question": "What is your fee for this service?",
+          "answer": "Our standard quality-of-life consultation fee depends on location. Please ask us for complete pricing details."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/weight.svg",
+      "image": " @img/services/woman-feeding-dog.webp",
+      "title": "Pet Nutritional Planning",
+      "page": "service-7.html",
+      "description": "Your pet can enjoy a longer and healthier life by staying at a weight that is ideal for them. By feeding your pet well and keeping their weight in check, you can reduce their chances of developing high blood pressure, diabetes, respiratory issues, and more",
+      "faqs": [
+        {
+          "question": "What information should I have ready for the first consultation?",
+          "answer": "To maximize the value of your pet’s initial nutritional assessment and planning appointment, please have the following information ready: a detailed dietary history including brands, types, and amounts fed currently and in the past; your pet’s comprehensive medical records and list of supplements or medications; your household’s feeding logistics and scheduling; and your specific nutritional priorities or concerns you have for your pet like desired weight loss/gain, allergies, low energy, and dietary health issues. Having these diet details and medical background insights allows our veterinary nutritionist to make precise, tailored recommendations to improve your pet’s wellbeing."
+        },
+        {
+          "question": "Can you accommodate special dietary needs or restrictions?",
+          "answer": "Absolutely, we have extensive experience formulating customized nutritional plans for various special needs and restrictions - food intolerances/sensitivities, allergy issues, renal or hepatic therapeutic homecooked diets, palatability challenges for picky eaters, dental disease, swallowing difficulties requiring texture modifications, and any other dietary considerations for your pet. There are no one-size-fits-all solutions in veterinary nutrition - our therapeutic plans are carefully designed for your pet's health status and needs."
+        },
+        {
+          "question": "Is veterinary nutrition planning different than general pet food guidelines?",
+          "answer": "Our nutritional consults are vastly more specialized than generic pet food package guidelines or internet research. We create truly customized plans based on your pet’s individual health profile, ideal weight, activity level, metabolic rate, lab results, and care goals - not general averages. This precise approach and scientific formulation allow us to provide targeted nutritional benefits tailored to your pet’s needs - be it disease management, proper growth, obesity correction, or something else entirely."
+        },
+        {
+          "question": "What is the typical fee for nutritional planning services?",
+          "answer": "Our standard consultation fee varies by location. Therapeutic diet dispensing and ongoing monitoring are charged separately. Please ask us for complete details."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/vaccination.svg",
+      "image": " @img/services/injection-for-cat.webp",
+      "title": "Vaccination",
+      "page": "service-8.html",
+      "description": "Dog and cat vaccines are part of providing essential, preventative care for your pet’s long-term health and well-being. We offer all essential and optional vaccines for your pet at your place.",
+      "faqs": [
+        {
+          "question": "What are the core vaccines all pets should receive? ",
+          "answer": "For dogs, the core vaccines include rabies vaccine, which is legally required and protects against the deadly rabies virus that can infect humans and animals; DA2PP vaccine, which protects against a combo of catchy and often fatal diseases - distemper, adenovirus, parainfluenza virus, and parvovirus; and Bordetella vaccine, which protects against \"kennel cough\" - a common cold-like infection. For cats, the essential core vaccines are rabies vaccine again for legal protection; FVRCP vaccine, which protects against three nasty colds - feline viral rhinotracheitis, calicivirus, and panleukopenia virus; and feline leukemia vaccine for prevention of this sometimes fatal viral infection that is spread through saliva and blood."
+        },
+        {
+          "question": "How often do pet vaccines need to be administered?",
+          "answer": "Most core vaccines and boosters stimulate at least 3 years, if not longer, of immunity; however, they still require regular booster shots over a pet's lifetime. Generally, after the first round of vaccines during puppy or kittenhood, boosters are given at one year old and then every 1-3 years, depending on the specific vaccine type and your pet's individual needs. Your vet will figure out the best booster schedule for each vaccine to make sure your pet's immunity stays strong."
+        },
+        {
+          "question": "Are pet vaccines safe?",
+          "answer": "Vet vaccines go through rigorous safety testing and are super safe and low risk for most pets, with only mild side effects like temporary soreness, mild fever, fatigue, or swelling occasionally reported, mainly after the very first vaccine doses. However, more severe allergic reactions are very rare. Overall, the huge disease protection benefits from vaccination far outweigh the tiny risks for most pets."
+        },
+        {
+          "question": "What is your vaccination exam fee?",
+          "answer": "Each vaccine and admin fee are priced individually. We offer discounted vaccine packages to encourage complete core protection."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/exercise.svg",
+      "image": " @img/services/black-cat-on-bed.webp",
+      "title": "Pet Behavior Counseling",
+      "page": "service-9.html",
+      "description": "Our veterinary doctors can offer personalized behavioral advice based on your pet’s age, breed, and health and can help you with any general behavior queries or issues you have about your pet.",
+      "faqs": [
+        {
+          "question": "What common behaviors do you help improve?",
+          "answer": "Some of the most frequent behavioral problems we address include puppy house-training challenges, leash reactivity/aggression on walks, destructive chewing behaviors, dog-dog or dog-human aggression, separation anxiety, generalized anxiety/fearfulness, excessive nighttime vocalization/barking, inappropriate urination/defecation, furniture scratching, escaping/roaming, and many other unwanted behaviors. There are solutions for even difficult issues through proven behavioral techniques."
+        },
+        {
+          "question": "What credentials should a pet behavioralist have?",
+          "answer": "At a minimum, confirmation of certification through the rigorous CAAB (Certified Applied Animal Behaviorist) program should be required to ensure your pet behavioralist or trainer has the highest level of science-based qualifications, experience, and continuing education. This certification indicates truly specialized expertise vs. more informal training."
+        },
+        {
+          "question": "Can you address my exotic pet's behavior?",
+          "answer": "Absolutely, our veterinary behaviorists have extensive experience working with small mammals like rabbits, guinea pigs, and hedgehogs, as well as pet birds, reptiles, and other unique species. We understand that each requires specialized behavioral knowledge compared to dogs and cats. We can help improve the quality of life for exotic companion animals struggling with problematic behaviors."
+        },
+        {
+          "question": "What is your typical fee?",
+          "answer": "Our standard consultation fee for an initial behavioral evaluation of your pet varies by location. Follow-up consultations, prescription behavioral medications, therapeutic foods, pheromone products, training services, or other interventions recommended during treatment are charged separately. Please inquire for full details on our behavior service costs so you can budget accordingly."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/document.svg",
+      "image": " @img/services/pet-passport.webp",
+      "title": "International Travel Certificate",
+      "page": "service-10.html",
+      "description": "International travel with your pet usually requires a check-up by a USDA-certified vet and different rules based on the country you're going to, plus getting a health certificate approved by a vet. Our traveling vets are USDA-certified, have the power to issue a USDA-certified pet travel certificate, and will come to you!",
+      "faqs": [
+        {
+          "question": "How far in advance should I schedule an appointment?",
+          "answer": "Ideally, we suggest scheduling your pet's international travel certification appointment 4-6 months before your planned travel dates. This big lead time allows for the completion of all necessary test lab tests, exams, and treatments that are required by most destination countries, which can take months for full completion. Starting the travel certification process well before travel prevents a rush right before travel."
+        },
+        {
+          "question": "What is the typical total cost?",
+          "answer": "The base exam fee and first health certificate fee are $xx on average. However, required lab tests like rabies titers, blood screens, poop exams, bug treatments, shot boosters, and more will cost extra. Total costs vary a lot based on the specific country rules. We provide complete estimates after checking your pet and destination requirements."
+        },
+        {
+          "question": "How long is an international certificate valid?",
+          "answer": "Once issued, the pet health certificate is usually only good for 10 calendar days from the official date of issue before it expires, at which point a new certificate would be required. It is important to carefully time the completion process to fall within this certification window that matches your scheduled travel dates."
+        },
+        {
+          "question": "Can you issue international certificates online?",
+          "answer": "Sorry, online health certificates are not allowed for international pet travel per USDA and destination country rules. An in-clinic face-to-face exam by a licensed vet on staff is required for the completion of all required International Health Certificate for Export paperwork. There are no exceptions to the in-person exam requirement for pet travel across borders and into other countries."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/trusted.svg",
+      "image": " @img/services/boarding-pass.webp",
+      "title": "Virtual Domestic Travel Certificate",
+      "page": "service-11.html",
+      "description": "When traveling with your pet within the US, there are different pet health rules depending on where you're going. Some states require a check-up by a USDA-accredited vet, current shots, lab testing, and getting an approved domestic pet health travel certificate, also called a Certificate of Veterinary Inspection.",
+      "faqs": [
+        {
+          "question": "What are the requirements for issuing a certificate virtually?",
+          "answer": "There are two main requirements that must be met for us to issue a pet health certificate for domestic U.S. or Canadian travel online instead of needing an in-clinic visit. First, we must have a current vet-client-pet relationship, including recent vet exam records. Second, your pet’s vaccinations and tests must be up to date based on the place's regulations, usually within the past 12 months. Your pet’s medical history and vaccine compliance will be checked before issuing the certificate online."
+        },
+        {
+          "question": "What documentation does the certificate include?",
+          "answer": "Our domestic virtual pet travel certificate templates confirm your pet is up to date on rabies vaccination, DA2PP core vaccines for dogs, FVRCP core vaccines for cats, and a vet wellness exam within the past year, as most places require. It will also include your pet's identifying information, signature, and license verification from the vet here at our clinic, as well as a QR code linking to verified records."
+        },
+        {
+          "question": "Can you certify my pet for international travel online?",
+          "answer": "Sorry, virtual health certificates are not allowed for pets traveling internationally or being imported/exported across borders per federal requirements. A face-to-face exam by a licensed vet is required for us to complete all International Health Certificate documentation. However, we are always happy to schedule international travel certification appointments at your convenience."
+        },
+        {
+          "question": "What is the fee for a domestic virtual travel certificate?",
+          "answer": "Our standard virtual certificate fee depends on certificate type, payable when you ask for it."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/research.svg",
+      "image": " @img/services/dog-blood-sample.webp",
+      "title": "Blood Work",
+      "page": "service-12.html",
+      "description": "Vets ASAP is ready to do in-home pet blood work to monitor your cat or dog's health, or for diagnosis purposes. Our Fear-Free® vets will take your pet's blood in your comfy home.",
+      "faqs": [
+        {
+          "question": "What is included in a regular complete blood count (CBC) and chemistry panel?",
+          "answer": "A complete blood count tests for levels of key red blood cells, white blood cells, platelets, hemoglobin, and other cell parts. A chemistry panel checks important organ function markers related to the kidneys, liver, pancreas, electrolyte levels, proteins, glucose, calcium, magnesium, and more. Together, these tell us about oxygen-carrying ability, infection status, clotting factors, diabetes risk, organ health, and baseline wellness."
+        },
+        {
+          "question": "Should my pet fast beforehand?",
+          "answer": "Yes, we suggest fasting your pet for 8-12 hours before blood collection when possible to make sure we get accurate baseline glucose values and improve some other chemistry tests unless low blood sugar is a possible concern. Water can be given during this pre-test fasting time. Let us know if there are any issues preventing fasting."
+        },
+        {
+          "question": "What if my pet is nervous about blood draws?",
+          "answer": "Please let our team know ahead of time if your pet is usually scared, nervous, or stressed during vet visits or with things like blood collection so that we can take extra steps and use approved calming stuff, anxiety-reducing sprays, positive rewards, fear-free handling techniques, or sedation if needed to make sure your pet stays as comfortable, stress-free, and happy as possible throughout the process!"
+        },
+        {
+          "question": "How much does bloodwork cost for pets?",
+          "answer": "The regular office visit or exam fee depends on the location. Please feel free to ask us for an estimate on suggested panels and pricing details ahead of time to best plan for your pet's lab testing needs."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/weight.svg",
+      "image": " @img/services/pet-wellness-exam.webp",
+      "title": "Neurological Examination",
+      "page": "service-13.html",
+      "description": "During a comprehensive in-home Wellness Exam or Sick Visit, our traveling vets can check your pet’s signs and brain function along with a complete nose-to-tail check-up of your pet’s wellness.",
+      "faqs": [
+        {
+          "question": "What common problems can your neurologists diagnose/treat?",
+          "answer": "Some common neurology problems we diagnose and manage include disc disease, seizure problems like epilepsy, old age balance problems, brain problems like abiotrophy, spine problems like embolism, nerve problems like neuropathy, brain tumors or other brain problems, and many other nerve and muscle problems."
+        },
+        {
+          "question": "Will I have to take imaging at a different place?",
+          "answer": "No, for your convenience, we have the most advanced on-site MRI, CT, and x-ray machines right here in our vet hospital so all imaging and tests can happen smoothly in one place. Avoiding going somewhere else makes the process easier for pets and owners alike."
+        },
+        {
+          "question": "What is the typical fee for a neurology consultation?",
+          "answer": "Our exam fees for an initial neurology check-up and chat start at around $xx, depending on how bad the problem is. Any extra imaging like MRI scans or spinal fluid tests would be quoted separately in addition to the base consultation fee. Please ask us for specific estimates."
+        },
+        {
+          "question": "Do you provide emergency neurology care?",
+          "answer": "Of course! We have board-certified vet neurology experts available 24/7 for urgent neuro chats in crisis situations where quick help is needed. If your pet experiences sudden mobility loss, seizure activity, or other major neurological symptoms, don't hesitate to contact us anytime - day or night."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/exercise.svg",
+      "image": " @img/services/orthopedic-examination.webp",
+      "title": "Orthopedic Examination",
+      "page": "service-14.html",
+      "description": "As part of your pet's Wellness Exam, your Vets ASAP veterinarian will check your pet's orthopedic and neurological health. We can check how your pet's bones and joints work in different ways. Pets often hide their problems very well, so it is important for you to tell us about any changes you've noticed at your place.",
+      "faqs": [
+        {
+          "question": "What orthopedic problems can you diagnose/treat?",
+          "answer": "We diagnose & treat a wide range of orthopedic problems, including general lameness from mild to bad, ligament tears or breaks, hip/elbow problems, loose kneecaps (dislocating kneecaps), bone problems like lesions fractures dislocations or other issues affecting the muscles bones joints tendons and other parts."
+        },
+        {
+          "question": "What is the typical fee for an orthopedic consultation?",
+          "answer": "Our regular exam fees for an initial orthopedic check-up and chat start at around $xx depending on how bad the problem is. Any extra tests like x-rays an MRI or a CT scan would be quoted separately in addition to the base consultation fee. Please ask us for specific estimates."
+        },
+        {
+          "question": "Do you provide orthopedic surgery?",
+          "answer": "Of course! We have multiple board-certified vet surgeons with advanced orthopedics training and skills in joint procedures fracture repairs ligament repairs joint replacement bone plating and various other complex soft tissue operations. All surgeries can be done on-site."
+        },
+        {
+          "question": "Do you offer rehab services?",
+          "answer": "Yes! We have a state-of-the-art vet rehab gym fully equipped with laser treatment range of motion stretches."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/injured.svg",
+      "image": " @img/services/person-apply-bandage.webp",
+      "title": "Pet Pain Management",
+      "page": "service-15.html",
+      "description": "Whether your pet is having short-term pain or long-term aches and pains as they age or dealing with a chronic condition, our traveling vets will visit you and help your pet feel better.",
+      "faqs": [
+        {
+          "question": "What signs indicate my pet is in pain?",
+          "answer": "Changes in normal behavior patterns or activity levels, alterations in typical eating/drinking and sleeping habits, increased vocalizing/panting, unprovoked aggression, observable limping, stiffness or difficulty moving, constantly licking specific body areas, inappropriate elimination, lack of grooming, and other variations from baseline can all be subtle or overt signals your pet may be in pain and should be evaluated."
+        },
+        {
+          "question": "What options do you offer beyond medication?",
+          "answer": "Some excellent therapeutic options we offer alongside or instead of medications include vet therapeutic laser treatments to reduce inflammation and ease joint/muscle pain, vet acupuncture focused on proven pain pressure points, joint supplements like glucosamine to support mobility, custom orthopedic braces/supports to stabilize weak joints, and tailored physical rehabilitation programs incorporating massage, stretches, therapeutic exercises, hydrotherapy and more to rebuild strength and conditioning."
+        },
+        {
+          "question": "How much does pain management cost?",
+          "answer": "We offer free phone consultations to discuss your pet's needs and budget considerations. We customize treatment to meet each pet's unique requirements at various budget levels. Please inquire for specific estimates - controlling pain is a priority regardless of the financial situation."
+        },
+        {
+          "question": "Can you provide at-home hospice pain relief?",
+          "answer": "Absolutely. When a pet transitions to hospice care for terminal illnesses, we work closely with your family to create customized in-home plans that ensure your pet remains as comfortable, pain-free, and content as possible while surrounded by your love and care in their final days. Please let us know if you need assistance with planning a peaceful goodbye."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/dog-face.svg",
+      "image": " @img/services/dog-allergy-test.webp",
+      "title": "Dermatologic Examination",
+      "page": "service-16.html",
+      "description": "During a Wellness or Sick Exam, our traveling vets can talk about how food or environmental allergies affect your pet and what to do for your pet. Pet allergy testing, diet tests, and referrals to a vet allergy expert might be helpful.",
+      "faqs": [
+        {
+          "question": "What are common skin problems you can diagnose/treat?",
+          "answer": "Some common skin problems we diagnose and provide personalized treatment plans for include allergies from food or environment or fleas, bacterial or yeast skin infections, bugs inside or outside your pet, autoimmune skin disorders, endocrine diseases, immune-mediated dermatitis, pattern baldness or hair loss problems, color changes like vitiligo, weird wounds or growths that need biopsy, and many other skin problems that affect the skin, coat, ears, or nails."
+        },
+        {
+          "question": "Should I give my pet a bath before the appointment?",
+          "answer": "No, please do not wash your pet for at least 3 days before their dermatology visit. We need to see and check their skin, fur, and any problems in their natural state without any recent shampoo or topical stuff.A clean coat can hide key details we need for proper diagnosis."
+        },
+        {
+          "question": "What is the typical fee for a dermatology consultation?",
+          "answer": "Our regular exam fees for an initial vet dermatology consultation depend on how bad the symptoms are. Any extra tests like skin scrapings or cultures, allergy testing bloodwork or skin biopsies would cost more. Please ask us for an estimate of how much dermatology care will cost."
+        },
+        {
+          "question": "Do you provide follow-up care?",
+          "answer": "Of course! We never want a pet suffering from long-term skin problems like allergies or repeated infections to feel left out. We work closely with you for the long run to keep improving your pet’s comfort and skin health through ongoing chats tests checking medicine adjustment avoiding allergens food management or other things as needed. Our team becomes your partner in keeping their best possible skin and fur condition over time."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/heart-rate.svg",
+      "image": " @img/services/injection-for-dog.webp",
+      "title": "Electrocardiogram (ECG)",
+      "page": "service-17.html",
+      "description": "An important diagnostic tool to assess your pet’s health, an ECG measures the electrical activity of the heart and can spot any irregular or abnormal heartbeats. Depending on location, our vets can perform dog and cat ECGs in your home or the Vets ASAP van.",
+      "faqs": [
+        {
+          "question": "What symptoms may prompt recommending an ECG?",
+          "answer": "Common concerning signs like arrhythmia or abnormal heart rhythms, detection of a heart murmur indicating potential valve abnormalities, observable weakness in pulse strength, episodes of exercise intolerance or lethargy, fainting or collapsing spells, persistent coughing, or other suggestions of potential heart dysfunction may lead a vet to pursue ECG testing to gather further details on electrical conduction and heart function."
+        },
+        {
+          "question": "How long do ECG results take?",
+          "answer": "ECG testing itself only takes a few minutes to perform, with the ECG machine tracing out the heart rhythm patterns during that brief period. The ECG tracings can be reviewed and analyzed the same day by a vet cardiologist on staff, allowing a summary of initial findings and recommendations to be provided during your appointment visit when possible."
+        },
+        {
+          "question": "Does ECG require anesthesia or sedation?",
+          "answer": "Nope! ECG testing is entirely noninvasive and very well tolerated by nearly all awake, conscious pets. The electrode pads are simply placed on the skin's surface, so most pets do not even notice them being on. Anesthesia or sedation is not required for routine ECG testing in dogs and cats."
+        },
+        {
+          "question": "What is the typical ECG cost?",
+          "answer": "This is in addition to any examination fees charged by the cardiologist. Please ask us for the current ECG procedure and cardiology consultation pricing details."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/sensor.svg",
+      "image": " @img/services/woman-caressing-dog.webp",
+      "title": "Microchipping",
+      "page": "service-18.html",
+      "description": "At-home cat and dog microchipping is an easy, stress-free, and long-term way to track down your lost pet. A pet microchip can work for up to 25 years and stay in place permanently, unlike other ID methods like a tag or a collar.",
+      "faqs": [
+        {
+          "question": "Does microchipping hurt my pet?",
+          "answer": "The microchip insertion process is very simple and usually causes only a brief, mild discomfort like a routine shot. The needle is very small, and the chip itself does not move or cause any feeling once it is under the skin. Most pets do not mind getting chipped, and they get some extra treats afterward!"
+        },
+        {
+          "question": "What contact info should I register?",
+          "answer": "You should register your current phone number and email address so you can be contacted anytime your chipped pet is scanned at a shelter or taken to a vet. You should also register info for 2-3 backup contacts - family, friends, or neighbors - in case you cannot be reached right away when your pet is found. Update any contact changes!"
+        },
+        {
+          "question": "How long does registration take?",
+          "answer": "Once you register, your contact information will stay in the microchip company database forever. But it is very important that you update your registration anytime you change contact numbers, addresses, or backup contacts over your pet's life to make sure you can be reached anytime if your pet is found and scanned years later."
+        },
+        {
+          "question": "What is the cost of microchipping?",
+          "answer": "Our total cost for microchipping your dog, cat, or other pet is $xx. This fee includes the chip itself, putting it in by our vet, a microchip scanner for checking your pet's chip yourself, and lifetime registration of your contact information in the database. Extra fees apply for membership programs."
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/research.svg",
+      "image": " @img/services/dog-x-ray.webp",
+      "title": "Veterinary Diagnostic Imaging",
+      "page": "service-19.html",
+      "description": "Vet X-ray is used to find out what's wrong with your pet. X-rays may be recommended when your vet needs a clear picture of what's inside your pet. Our care teams can do X-rays at your home or in our Vets ASAP van, wherever you are.",
+      "faqs": [
+        {
+          "question": "What symptoms may warrant diagnostic imaging?",
+          "answer": "Some common concerning signs that often lead to recommendation for imaging include new onset limping or lameness, localized swelling of joints/limbs/abdomen, signs of abdominal pain or GI issues,sudden reluctance to jump onto furniture, onset of straining or urinary issues, unexplained significant weight loss, exercise intolerance or lethargy, seizure activity, and other physical or behavioral changes."
+        },
+        {
+          "question": "Will my pet need sedation or anesthesia?",
+          "answer": "For most routine imaging like standard 2D x-rays and ultrasound, pets need only gentle restraint and minimal sedation at most to stay still and comfortable. However, for advanced cross-sectional imaging like CT scans and MRIs where stillness is crucial, deeper anesthesia is needed for the duration of the scan to get the best diagnostic images without any motion blur or distortion."
+        },
+        {
+          "question": "How are costs for diagnostic imaging determined?",
+          "answer": "Standard x-ray and ultrasound procedures have base fees starting around $xx based on the body region imaged. For advanced imaging like CT and MRI scans, pricing is based on the required scan time since they are done in real time. Longer diagnostic scans cost more than shorter screening scans."
+        },
+        {
+          "question": "How quickly are results provided?",
+          "answer": "We will try to give you a summary of initial scan findings and impressions right after your appointment when possible. However, finalized reports are completed within 48 hours (about 2 days) in all cases. Let us know if you need more urgent results reporting!"
+        }
+      ]
+    },
+    {
+      "icon": " @img/icon/ultrasound.svg",
+      "image": " @img/services/pet-ultrasound-image.webp",
+      "title": "Mobile Pet Ultrasound",
+      "page": "service-20.html",
+      "description": "A pet ultrasound, also called an AFAST test, creates images of the inside of your pet's body using sound waves. Most of our vets can do an AFAST test at your location. A pet ultrasound test can help your vet find out what's wrong with your pet that a regular checkup might miss.",
+      "faqs": [
+        {
+          "question": "What conditions can ultrasound detect/assess?",
+          "answer": "Some examples include detecting masses or tumors in organs like the spleen, evaluating organ anatomy and function by looking for signs of disease, assessing the bladder for potential stones or masses causing urinary issues, screening the heart for valve defects or chamber enlargement indicating heart disease, checking for free abdominal fluid signaling certain illnesses, confirming pregnancy in cats, and many other applications."
+        },
+        {
+          "question": "Does my pet need to be sedated?",
+          "answer": "Fortunately, ultrasound is a very well-tolerated diagnostic method that rarely requires sedation or anesthesia for pets. Most animal patients are able to remain fully conscious but relaxed as the transducer gently glides over the skin after the application of warm imaging gel. For anxious pets, we sometimes administer mild sedatives to ensure a smooth ultrasound experience."
+        },
+        {
+          "question": "What is the typical cost?",
+          "answer": "There is a base fee that includes performing the complete ultrasound scan in your home setting. Interpretation of ultrasound images and drafting of formal report findings by a board-certified vet radiologist is an additional fee layered onto the base procedural cost. Please inquire for specifics on current pricing."
+        },
+        {
+          "question": "How soon can ultrasound results be provided?",
+          "answer": "We make every effort to have a same-day draft report available immediately after your appointment, when possible, so that you do not have to wait anxiously. Finalized reports are delivered within 48 hours in all cases. Let us know if you ever need results expedited for any reason!"
+        }
+      ]
+    }
+  ],
+  "doctors": [
+    {
+      "image": "@img/doctor/doctor-1.webp",
+      "name": "Dr. Jane Cooper",
+      "profession": "Veterinary"
+    },
+    {
+      "image": "@img/doctor/doctor-2.webp",
+      "name": "Dr. Robert Fox",
+      "profession": "Veterinary"
+    },
+    {
+      "image": "@img/doctor/doctor-3.webp",
+      "name": "Dr. Esther Howard",
+      "profession": "Veterinary"
+    },
+    {
+      "image": "@img/doctor/doctor-4.webp",
+      "name": "Dr. Jenny Wilson",
+      "profession": "Veterinary"
+    },
+    {
+      "image": "@img/doctor/doctor-5.webp",
+      "name": "Dr. Jacob Jones",
+      "profession": "Veterinary"
+    },
+    {
+      "image": "@img/doctor/doctor-6.webp",
+      "name": "Dr. Kristin Watson",
+      "profession": "Veterinary"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "1. What type of Wellness Exam do you prefer?",
+      "answer": "Our veterinarians perform thorough, at-home pet exams and physicals."
+    },
+    {
+      "question": "2. Do you also serve for large animals?",
+      "answer": "Our veterinarians offer services for both smaller and bigger animals."
+    },
+    {
+      "question": "3. What about the Dental process?",
+      "answer": "We make it a priority to provide pet dental procedures for our clients."
+    },
+    {
+      "question": "4. What types of vehicles do you have?",
+      "answer": "Our vehicle has all the functions of a stationary clinic at your doorstep."
+    },
+    {
+      "question": "5. What service area do you cover?",
+      "answer": "We cover most of the areas in the US.You can also conatact us to confirm the area"
+    }
+  ],
+  "blogs": [
+    {
+      "thumbnail": "@img/blog/blog-1-sm.webp",
+      "image": "@img/blog/blog-1.webp",
+      "title": "How to Choose the Best In-Home Pet Care Service",
+      "date": "Sep 20, 2023",
+      "page": "blog-1.html",
+      "description": "If you need someone to come into your home and care for your beloved furry family members while you're away, you want to find a trustworthy and reliable service. But with so many options out there for pet care assistance, how do you choose the right one for your needs?"
+    },
+    {
+      "thumbnail": "@img/blog/blog-2-sm.webp",
+      "image": "@img/blog/blog-2.webp",
+      "title": "How to Thoroughly Prepare Your Home and Pet for an In-Home Veterinary Visit",
+      "date": "Sep 20, 2023",
+      "page": "blog-2.html",
+      "description": "Scheduling an at-home veterinary visit for your pet provides convenience and reduces stress compared to trips to the clinic. However, taking some time to optimize your home environment and prepare your furry patient ahead of the vet's arrival will ensure the smoothest, most efficient, and positive experience for all."
+    },
+    {
+      "thumbnail": "@img/blog/blog-3-sm.webp",
+      "image": "@img/blog/blog-3.webp",
+      "title": "Most Common Health Problems Treated by In-Home Vet Services",
+      "date": "Sep 20, 2023",
+      "page": "blog-3.html",
+      "description": "In-home vet care provides a convenient way for pets to receive quality veterinary services within the comfort of their own home. Mobile vets can treat many of the same common health issues that would typically require a trip to the clinic."
+    }
+  ],
+  "testimonials": [
+    {
+      "stars": 4,
+      "avatar": "@img/avatar/avatar-1.webp",
+      "name": "Leslie Alexander",
+      "profession": "Marketing Coordinator ",
+      "body": "Lorem ipsum dolor sit amet consectetur. Sapien tempus amet scelerisque lectus pharetra lacus enim faucibus. At neque congue a amet ut velit."
+    },
+    {
+      "stars": 4,
+      "avatar": "@img/avatar/avatar-2.webp",
+      "name": "Ronald Richards",
+      "profession": "Dog Trainer",
+      "body": "Phasellus malesuada gravida dolor sem. Metus laoreet habitasse est sem interdum maecenas amet mattis. Mauris viverra pulvinar placerat pretium id. Feugiat urna diam mauris pharetra tempus."
+    },
+    {
+      "stars": 4,
+      "avatar": "@img/avatar/avatar-3.webp",
+      "name": "Dianne Russell",
+      "profession": "Web Designer",
+      "body": "Arcu turpis tempus sit est a tellus tortor. Felis cras ipsum lectus at massa quam. Velit id tempor nam arcu molestie sed a."
+    },
+    {
+      "stars": 4,
+      "avatar": "@img/avatar/avatar-4.webp",
+      "name": "Marvin McKinney",
+      "profession": "Medical Assistant",
+      "body": "Justo elementum morbi mauris amet diam a pharetra at. Rutrum proin fermentum etiam non habitasse egestas. Consequat risus placerat viverra eget felis. Ornare at faucibus suscipit id nec etiam."
+    },
+    {
+      "stars": 4,
+      "avatar": "@img/avatar/avatar-1.webp",
+      "name": "Leslie Alexander",
+      "profession": "Marketing Coordinator ",
+      "body": "Lorem ipsum dolor sit amet consectetur. Sapien tempus amet scelerisque lectus pharetra lacus enim faucibus. At neque congue a amet ut velit."
+    },
+    {
+      "stars": 4,
+      "avatar": "@img/avatar/avatar-2.webp",
+      "name": "Ronald Richards",
+      "profession": "Dog Trainer",
+      "body": "Phasellus malesuada gravida dolor sem. Metus laoreet habitasse est sem interdum maecenas amet mattis. Mauris viverra pulvinar placerat pretium id. Feugiat urna diam mauris pharetra tempus."
+    },
+    {
+      "stars": 4,
+      "avatar": "@img/avatar/avatar-3.webp",
+      "name": "Dianne Russell",
+      "profession": "Web Designer",
+      "body": "Arcu turpis tempus sit est a tellus tortor. Felis cras ipsum lectus at massa quam. Velit id tempor nam arcu molestie sed a."
+    },
+    {
+      "stars": 4,
+      "avatar": "@img/avatar/avatar-4.webp",
+      "name": "Marvin McKinney",
+      "profession": "Medical Assistant",
+      "body": "Justo elementum morbi mauris amet diam a pharetra at. Rutrum proin fermentum etiam non habitasse egestas. Consequat risus placerat viverra eget felis. Ornare at faucibus suscipit id nec etiam."
+    }
+  ]
+}

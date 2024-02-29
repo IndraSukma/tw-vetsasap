@@ -1,0 +1,413 @@
+{% extends "layouts/main.html" %}
+
+<!-- prettier-ignore -->
+{% from "macros/faq.html" import faq %}
+
+<!-- prettier-ignore -->
+{% block headThirdParty %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block headCustom %}
+<script defer src="@script/index.js"></script>
+{% endblock %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<main>
+  <div
+    id="hero"
+    class="flex flex-col sm:flex-row-reverse items-stretch relative sm:min-h-[min(100svh,28rem)] lg:min-h-[min(100svh,40rem)] xl:min-h-[min(100svh,48rem)] mb-16 md:mb-20 xl:mb-28 2xl:container 2xl:pr-4">
+    <div class="sm:w-5/12 2xl:w-1/2 px-3 pt-24 lg:p-4">
+      <img src="@img/cat-getting-massaged.webp" class="sm:w-full sm:h-full rounded-2xl object-cover aspect-[11/12]" />
+    </div>
+    <div class="container sm:absolute inset-x-0 mx-auto h-full flex items-center sm:pt-24">
+      <div class="sm:w-7/12 2xl:w-1/2 pt-6 sm:pt-0">
+        <h1 class="text-4xl/none lg:text-5xl xl:text-6xl font-black">
+          Pawsitivley <br class="md:hidden" />
+          Stress-Free <br class="hidden md:block" />
+          and <br class="md:hidden" />
+          Convenient Care <br />
+          <span class="text-primary">for Your Pets</span>
+        </h1>
+        <p class="text-base lg:text-lg text-gray-700 mt-4 mb-8 lg:mt-8 lg:mb-14">
+          Our veterinarians can better serve the needs <br class="md:hidden" />
+          of your pets <br class="hidden md:block" />
+          when they are most relaxed and <br class="md:hidden" />
+          happy at the comfort <br class="hidden md:block xl:hidden" />
+          of their home.
+        </p>
+        <a href="#about-us" class="btn lg:btn-lg btn-secondary">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div id="awards" class="container mb-16 md:mb-20 xl:mb-28">
+    <div class="flex flex-wrap justify-between gap-y-6">
+      {% for i in range(0, 6) -%}
+      <div class="w-1/3 sm:w-auto flex justify-center">
+        <img src="@img/award/award-{{ i+1 }}.svg" alt="Award {{ i+1 }}" width="72" height="72" class="sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28" />
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+  <div id="welcome-to-vetsasap" class="container flex flex-col lg:flex-row gap-9 md:gap-6 xl:gap-8 mb-20 md:mb-24 xl:mb-32 xl:justify-between">
+    <div class="md:w-9/12 lg:w-4/12 sm:text-center lg:text-left md:mx-auto lg:mx-0 flex flex-col justify-center">
+      <h1 class="text-4xl/none lg:text-5xl xl:text-6xl font-black">
+        Welcome to
+        <br />
+        <span class="text-primary">Vets ASAP</span>
+      </h1>
+      <p class="text-base lg:text-lg text-gray-700 mt-4 lg:mt-8">
+        Experience exceptional veterinary care delivered to your doorstep. Our dedicated team of experienced veterinarians provides personalized and compassionate services, ensuring your pet's
+        well-being in the comfort of home.
+      </p>
+    </div>
+    <div class="lg:w-8/12 xl:w-7/12 flex flex-col flex-wrap sm:flex-row gap-y-8">
+      <div class="sm:w-1/2 flex flex-col items-center text-center px-6 md:px-8 lg:px-6">
+        <span class="material-symbols-rounded text-4xl text-accent"> groups </span>
+        <h2 class="text-lg font-bold mt-1 mb-2">Mobile Veterinary</h2>
+        <p class="text-gray-700">Our mobile team is always ready to visit your home for your pet’s wellbeing.</p>
+      </div>
+      <div class="sm:w-1/2 flex flex-col items-center text-center px-6 md:px-8 lg:px-6">
+        <span class="material-symbols-rounded text-4xl text-accent"> schedule </span>
+        <h2 class="text-lg font-bold mt-1 mb-2">Convenient</h2>
+        <p class="text-gray-700">We understand your time is precious and can visit at the time of your choice.</p>
+      </div>
+      <div class="sm:w-1/2 flex flex-col items-center text-center px-6 md:px-8 lg:px-6">
+        <span class="material-symbols-rounded text-4xl text-accent"> health_and_safety </span>
+        <h2 class="text-lg font-bold mt-1 mb-2">Quality services</h2>
+        <p class="text-gray-700">Our expert team of vets is full equipped with latest tools to ensure quality.</p>
+      </div>
+      <div class="sm:w-1/2 flex flex-col items-center text-center px-6 md:px-8 lg:px-6">
+        <span class="material-symbols-rounded text-4xl text-accent"> medical_services </span>
+        <h2 class="text-lg font-bold mt-1 mb-2">All services at one place</h2>
+        <p class="text-gray-700">Numerous quality services for your pets offered at a single place.</p>
+      </div>
+    </div>
+  </div>
+  {% include "partials/formAppointment.html" %}
+  <div id="how-it-works" class="container flex flex-col lg:justify-between sm:flex-row gap-12 sm:gap-6 my-20 md:my-24 xl:my-32">
+    <div class="sm:w-1/2 lg:w-6/12 px-6 sm:pl-0 md:pl-6 xl:px-12 flex items-center">
+      <img src="@img/dogs-transparent.webp" alt="Two Puppies Sitting" class="w-full" />
+    </div>
+    <div class="sm:w-1/2 lg:w-5/12 flex flex-col justify-center">
+      <h1 class="text-4xl/none lg:text-5xl xl:text-6xl font-black mb-8 lg:mb-16">How it Works</h1>
+      <div class="flex gap-4 mb-6 lg:mb-10">
+        <span class="material-symbols-rounded text-3xl lg:text-4xl text-accent"> call </span>
+        <div>
+          <h2 class="text-lg lg:text-xl font-bold mb-1">Contact Us</h2>
+          <p class="text-gray-700">1-844-VetsASAP</p>
+        </div>
+      </div>
+      <div class="flex gap-4 mb-6 lg:mb-10">
+        <span class="material-symbols-rounded text-3xl lg:text-4xl text-accent"> event </span>
+        <div>
+          <h2 class="text-lg lg:text-xl font-bold mb-1">Schedule Now</h2>
+          <p class="text-gray-700">
+            Book a home visit with our mobile team <br class="hidden lg:block" />
+            at your convenience
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <span class="material-symbols-rounded text-3xl lg:text-4xl text-accent"> home </span>
+        <div>
+          <h2 class="text-lg lg:text-xl font-bold mb-1">Get Treatment at Home</h2>
+          <p class="text-gray-700">
+            Give your pet a pleasure of a comfortable home visit <br class="hidden lg:block" />
+            by our expert veterinarians
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="benefits" class="flex flex-col sm:flex-row-reverse items-stretch relative sm:min-h-[min(100svh,28rem)] lg:min-h-[min(100svh,40rem)] xl:min-h-[min(100svh,48rem)] 2xl:container 2xl:pr-4">
+    <div class="sm:w-5/12 2xl:w-1/2 px-3 lg:p-4 flex items-center">
+      <img src="@img/brown-dog.webp" class="lg:w-full lg:h-full rounded-2xl object-cover aspect-[9/12] md:aspect-[10/12] lg:aspect-[11/12]" />
+    </div>
+    <div class="container sm:absolute inset-x-0 mx-auto h-full flex items-center">
+      <div class="sm:w-7/12 2xl:w-1/2 pt-6 sm:pt-0">
+        <h1 class="text-4xl/none lg:text-5xl xl:text-6xl font-black mb-8 sm:mb-6 lg:mb-12">
+          Benefits for <br class="md:hidden" />
+          Your Pets
+        </h1>
+        <div class="flex gap-4 mb-6 sm:mb-4 lg:mb-8">
+          <span class="material-symbols-rounded text-3xl sm:text-2xl lg:text-4xl text-primary"> relax </span>
+          <p class="sm:text-sm lg:text-base">
+            Reduce stress and anxiety, esp. <br />
+            for senior pets and multi-pets
+          </p>
+        </div>
+        <div class="flex gap-4 mb-6 sm:mb-4 lg:mb-8">
+          <span class="material-symbols-rounded text-3xl sm:text-2xl lg:text-4xl text-primary"> microbiology </span>
+          <p class="sm:text-sm lg:text-base">
+            Decrease the risk of contagious <br />
+            diseases receive improved diagnosis
+          </p>
+        </div>
+        <div class="flex gap-4 mb-6 sm:mb-4 lg:mb-8">
+          <span class="material-symbols-rounded text-3xl sm:text-2xl lg:text-4xl text-primary"> sentiment_calm </span>
+          <p class="sm:text-sm lg:text-base">
+            Mobile vet care is more personalized <br />
+            and provides a peaceful environment
+          </p>
+        </div>
+        <div class="flex gap-4 mb-6 sm:mb-4 lg:mb-8">
+          <span class="material-symbols-rounded text-3xl sm:text-2xl lg:text-4xl text-primary"> schedule </span>
+          <p class="sm:text-sm lg:text-base">
+            Save time and money. No driving to <br class="sm:hidden" />
+            the vet <br class="hidden sm:block md:hidden" />
+            hospital. <br class="hidden md:block" />
+            No waiting for hours <br class="sm:hidden" />
+            to been seen
+          </p>
+        </div>
+        <div class="flex gap-4">
+          <span class="material-symbols-rounded text-3xl sm:text-2xl lg:text-4xl text-primary"> car_crash </span>
+          <p class="sm:text-sm lg:text-base">
+            Mobile vet care is easier for those who can’t drive <br class="hidden md:block" />
+            such as those who are disabled and senior citizens
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services" class="container text-center pt-20 md:pt-24 xl:pt-32">
+    <h1 class="text-4xl/none lg:text-5xl font-black">Our Mobile Services for Pets</h1>
+    <p class="text-base lg:text-lg text-gray-700 mt-4 mb-12 xl:mt-4 xl:mb-16">Our doctors can perform the following services conveniently in your home</p>
+    <div class="collapsible-content">
+      <div class="collapsible-summary">
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-6 xl:gap-y-8 -mx-3 xl:-mx-4">
+          {% for service in global.services %}
+          <!-- prettier-ignore -->
+          {% if loop.index <= 6 %}
+          <div class="sm:w-1/2 lg:w-1/3 flex px-3 xl:px-4">
+            <a href="{{ service.page }}" class="btn btn-lg w-full h-auto flex flex-col justify-start gap-0 font-normal bg-gray-50 border-0 px-6 py-7">
+              <img src="{{ service.icon }}" alt="Cat Sitting" height="64" width="64" class="mx-auto" />
+              <h2 class="text-lg xl:text-xl font-bold mt-4 mb-3">{{ service.title }}</h2>
+              <p class="text-sm xl:text-base text-gray-700 line-clamp-3">{{ service.description }}</p>
+            </a>
+          </div>
+          {% endif %}
+          <!-- prettier-ignore -->
+          {% endfor %}
+        </div>
+      </div>
+      <div class="collapsible-details flex flex-col-reverse">
+        <input type="checkbox" class="collapsible-trigger peer btn lg:btn-lg btn-secondary mt-12 xl:mt-16 mx-auto" data-label-off="View more" data-label-on="View less" />
+        <div class="collapsible-content overflow-hidden max-h-0 peer-checked:max-h-[250rem] sm:peer-checked:max-h-[125rem] duration-1000 sm:duration-500">
+          <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-6 xl:gap-y-8 -mx-3 xl:-mx-4 pt-6 xl:pt-8">
+            {% for service in global.services %}
+            <!-- prettier-ignore -->
+            {% if loop.index > 6 %}
+            <div class="sm:w-1/2 lg:w-1/3 flex px-3 xl:px-4">
+              <a href="{{ service.page }}" class="btn btn-lg w-full h-auto flex flex-col justify-start gap-0 font-normal bg-gray-50 border-0 px-6 py-7">
+                <img src="{{ service.icon }}" alt="Cat Sitting" height="64" width="64" class="mx-auto" />
+                <h2 class="text-lg xl:text-xl font-bold mt-4 mb-3">{{ service.title }}</h2>
+                <p class="text-sm xl:text-base text-gray-700 line-clamp-3">{{ service.description }}</p>
+              </a>
+            </div>
+            {% endif %}
+            <!-- prettier-ignore -->
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="about-us" class="container flex flex-col md:flex-row gap-8 md:gap-6 xl:gap-8 mb-20 md:mb-24 xl:mb-32 pt-20 md:pt-24 xl:pt-32 items-center xl:justify-between">
+    <div class="md:w-1/2 sm:text-center md:text-left flex flex-col justify-center">
+      <h1 class="text-4xl/none lg:text-5xl xl:text-6xl font-black">
+        Our services also <br class="sm:hidden" />
+        include <br class="hidden sm:block md:hidden" />
+        <span class="text-primary">our love</span> <br class="sm:hidden md:block" />
+        for your pets
+      </h1>
+      <p class="text-base md:text-sm lg:text-lg text-gray-700 mt-6 lg:mt-12">
+        When it comes to the health and well-being of your furry friends, we understand that convenience and comfort are essential. That's why we bring professional veterinary services right to your
+        doorstep!. <br />
+        <br />
+        Our mobile team of experienced veterinarians is dedicated to providing top-quality care for your beloved pets in the comfort of your own home.
+      </p>
+    </div>
+    <a href="javascript:void(0)" onclick="modalAbout.showModal()" class="sm:w-8/12 md:w-1/2 group block relative rounded-2xl overflow-hidden">
+      <img src="@img/woman-holding-a-dog.webp" alt="Woman holding a dog" class="object-cover w-full aspect-[4/3]" />
+      <div class="w-full h-full absolute top-0 flex justify-center items-center group-hover:bg-gray-950/20 duration-200">
+        <div class="h-12 w-12 lg:h-20 lg:w-20 rounded-full flex justify-center items-center bg-white group-active:group-hover:scale-95 duration-200">
+          <span class="material-symbols-rounded icon-filled text-3xl lg:text-5xl text-accent"> play_arrow </span>
+        </div>
+      </div>
+    </a>
+    <dialog id="modalAbout" class="modal">
+      <div class="modal-box w-full p-0 rounded-none sm:rounded-2xl bg-transparent lg:max-w-3xl">
+        <iframe
+          class="w-full aspect-video"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+      <form method="dialog" class="fixed top-6 right-6 xl:top-12 xl:right-12">
+        <button class="btn-close-modal btn btn-lg bg-white w-12 px-0 rounded-full shadow-xl">
+          <span class="material-symbols-rounded"> close </span>
+        </button>
+      </form>
+    </dialog>
+  </div>
+  <div id="veterinary" class="container text-center mb-20 md:mb-24 xl:mb-32">
+    <h1 class="text-4xl/none lg:text-5xl font-black mb-12 xl:mb-16">Meet Our Veterinary</h1>
+    <div class="collapsible-content">
+      <div class="collapsible-summary">
+        <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-8 xl:gap-y-12 -mx-3 xl:-mx-4">
+          {% for doctor in global.doctors %}
+          <div class="sm:w-1/2 lg:w-1/3 px-3 xl:px-4">
+            <img src="{{ doctor.image }}" alt="Veterinary" class="rounded-2xl aspect-square object-cover w-full" />
+            <h2 class="text-xl lg:text-2xl font-bold mt-4">{{ doctor.name }}</h2>
+            <p class="text-base lg:text-xl font-semibold text-primary">{{ doctor.profession }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="collapsible-details flex flex-col-reverse">
+        <input type="checkbox" class="collapsible-trigger peer btn lg:btn-lg btn-secondary mt-12 xl:mt-16 mx-auto" data-label-off="View more" data-label-on="View less" />
+        <div class="collapsible-content overflow-hidden max-h-0 peer-checked:max-h-[250rem] sm:peer-checked:max-h-[93.75rem] duration-1000 sm:duration-300">
+          <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-8 xl:gap-y-12 -mx-3 xl:-mx-4 pt-8 xl:pt-12">
+            {% for doctor in global.doctors %}
+            <div class="sm:w-1/2 lg:w-1/3 px-3 xl:px-4">
+              <img src="{{ doctor.image }}" alt="Veterinary" class="rounded-2xl aspect-square object-cover w-full" />
+              <h2 class="text-xl lg:text-2xl font-bold mt-4">{{ doctor.name }}</h2>
+              <p class="text-base lg:text-xl font-semibold text-primary">{{ doctor.profession }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="testimony" class="container mb-20 md:mb-24 xl:mb-32">
+    <h1 class="text-4xl/none lg:text-5xl text-center font-black mb-12 xl:mb-16">
+      What Our <br class="sm:hidden" />
+      Customers Say
+    </h1>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        {% for testimonial in global.testimonials %}
+        <div class="swiper-slide">
+          <div class="bg-gray-50 rounded-2xl p-6 lg:p-8">
+            <div class="flex gap-0.5 mb-4 lg:mb-5">
+              {% for i in range(0, 5) -%}
+              <span class="material-symbols-rounded icon-filled text-xl/none lg:text-2xl/none {{ 'text-accent' if i < testimonial.stars else 'text-gray-300' }}"> star </span>
+              {%- endfor %}
+            </div>
+            <p class="text-base text-gray-700 h-36 line-clamp-6">{{ testimonial.body }}</p>
+            <div class="flex pt-6 lg:pt-8 gap-3 lg:gap-4">
+              <img src="{{ testimonial.avatar }}" alt="Avatar" height="44" width="44" class="rounded-full aspect-square lg:h-12 lg:w-12" />
+              <div class="flex flex-col justify-center">
+                <h5 class="text-base lg:text-xl font-bold line-clamp-1">{{ testimonial.name }}</h5>
+                <small class="text-sm lg:text-base text-gray-500 line-clamp-1">{{ testimonial.profession }}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="flex gap-6 justify-center mt-8 lg:mt-16">
+        <button type="button" class="swiper-prev btn btn-primary lg:btn-lg w-10 lg:w-12 px-0">
+          <span class="material-symbols-rounded">arrow_back</span>
+        </button>
+        <button type="button" class="swiper-next btn btn-primary lg:btn-lg w-10 lg:w-12 px-0">
+          <span class="material-symbols-rounded">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  {{ faq(global.faqs) }}
+  <div id="blog" class="container text-center mb-20 md:mb-24 xl:mb-32 pt-20 md:pt-24 xl:pt-32">
+    <h1 class="text-4xl/none lg:text-5xl font-black mb-12 xl:mb-16">Our Latest Blogs</h1>
+    <div class="collapsible-content">
+      <div class="collapsible-summary">
+        <div class="flex flex-col md:flex-row flex-wrap items-center justify-center gap-y-12 xl:gap-y-14 -mx-3 xl:-mx-4">
+          {% for blog in global.blogs %}
+          <div class="sm:w-2/3 md:w-1/3 px-3 xl:px-4 text-left">
+            <a href="{{ blog.page }}" title="{{ blog.title }}">
+              <img src="{{ blog.thumbnail }}" alt="Blog" class="w-full aspect-[4/3] rounded-2xl object-cover" />
+            </a>
+            <a href="{{ blog.page }}" title="{{ blog.title }}">
+              <h2 class="text-xl lg:text-2xl font-bold mt-4 line-clamp-2">{{ blog.title }}</h2>
+            </a>
+            <small class="text-xs lg:text-sm font-semibold text-primary block mt-2 mb-3 lg:mb-4">{{ blog.date }}</small>
+            <p class="text-sm xl:text-base text-gray-700 line-clamp-4">{{ blog.description }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="collapsible-details flex flex-col-reverse">
+        <input type="checkbox" class="collapsible-trigger peer btn lg:btn-lg btn-secondary mt-12 xl:mt-16 mx-auto" data-label-off="View more" data-label-on="View less" />
+        <div class="collapsible-content overflow-hidden max-h-0 peer-checked:max-h-[225rem] md:peer-checked:max-h-[75rem] duration-1000 md:duration-500">
+          <div class="flex flex-col md:flex-row flex-wrap items-center justify-center gap-y-12 xl:gap-y-14 -mx-3 xl:-mx-4 pt-12 xl:pt-14">
+            {% for blog in global.blogs %}
+            <div class="sm:w-2/3 md:w-1/3 px-3 xl:px-4 text-left">
+              <a href="{{ blog.page }}" title="{{ blog.title }}">
+                <img src="{{ blog.thumbnail }}" alt="Blog" class="w-full aspect-[4/3] rounded-2xl object-cover" />
+              </a>
+              <a href="{{ blog.page }}" title="{{ blog.title }}">
+                <h2 class="text-xl lg:text-2xl font-bold mt-4 line-clamp-2">{{ blog.title }}</h2>
+              </a>
+              <small class="text-xs lg:text-sm font-semibold text-primary block mt-2 mb-3 lg:mb-4">{{ blog.date }}</small>
+              <p class="text-sm xl:text-base text-gray-700 line-clamp-4">{{ blog.description }}</p>
+            </div>
+            {% endfor %}
+            <!-- prettier-ignore -->
+            {% for blog in global.blogs %}
+            <div class="sm:w-2/3 md:w-1/3 px-3 xl:px-4 text-left">
+              <a href="{{ blog.page }}" title="{{ blog.title }}">
+                <img src="{{ blog.thumbnail }}" alt="Blog" class="w-full aspect-[4/3] rounded-2xl object-cover" />
+              </a>
+              <a href="{{ blog.page }}" title="{{ blog.title }}">
+                <h2 class="text-xl lg:text-2xl font-bold mt-4 line-clamp-2">{{ blog.title }}</h2>
+              </a>
+              <small class="text-xs lg:text-sm font-semibold text-primary block mt-2 mb-3 lg:mb-4">{{ blog.date }}</small>
+              <p class="text-sm xl:text-base text-gray-700 line-clamp-4">{{ blog.description }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="request-appointment-cta" class="2xl:container p-3 xl:p-4">
+    <div class="bg-primary/25 rounded-2xl py-12 lg:py-20 text-center sm:text-left relative overflow-hidden">
+      <img
+        src="@img/dog-paw.svg"
+        alt="Dog Paw"
+        height="720"
+        width="720"
+        class="lg:h-[60rem] lg:w-[60rem] rotate-45 absolute -z-10 opacity-50 max-w-none -top-72 -left-60 md:-left-40 lg:-top-[30rem] lg:-left-80 xl:-top-96 xl:-left-56" />
+      <img src="@img/dog-paw.svg" alt="Dog Paw" height="360" width="360" class="lg:h-[30rem] lg:w-[30rem] -rotate-45 absolute -z-10 opacity-50 max-w-none lg:-bottom-8 lg:-right-48 hidden lg:block" />
+      <div class="lg:container">
+        <div class="flex flex-col sm:flex-row items-center px-6 sm:px-10 md:px-16 lg:px-8 xl:-mx-4">
+          <div class="flex-1">
+            <h1 class="text-2xl lg:text-3xl text-secondary font-black">
+              Schedule Your Mobile <br class="sm:hidden" />
+              Vet Visit Today
+            </h1>
+            <p class="lg:text-xl text-secondary font-semibold mt-3 mb-8 sm:mt-2 sm:mb-0">
+              Contact us now and make an <br class="sm:hidden" />
+              appointment today
+            </p>
+          </div>
+          <div>
+            <a href="#request-appointment" class="btn btn-secondary lg:btn-lg">Request appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

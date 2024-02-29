@@ -1,0 +1,119 @@
+{% extends "layouts/main.html" %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<main>
+  <div class="container">
+    <div class="breadcrumbs text-sm md:text-base font-semibold mt-28 mb-12 lg:mt-40">
+      <ul>
+        <li><a href="index.html" class="link link-hover hover:link-primary">Home</a></li>
+        <li><a href="index.html#blog" class="link link-hover hover:link-primary">Blog</a></li>
+        <li><span class="text-gray-500">{{ global.blogs[1].title }}</span></li>
+      </ul>
+    </div>
+    <img src="{{ global.blogs[1].image }}" alt="Blog" class="md:w-5/6 mx-auto aspect-[5/3] object-cover rounded-2xl" />
+    <div class="md:w-4/6 mx-auto mt-8 lg:mt-12 mb-20 md:mb-24 xl:mb-32">
+      <h1 class="text-3xl lg:text-5xl text-primary font-black mb-12 lg:mb-16">{{ global.blogs[1].title }}</h1>
+      <article class="prose lg:prose-lg prose-h2:text-gray-950 prose-h4:text-xl prose-h4:text-accent prose-p:text-gray-700 prose-img:w-full prose-img:object-cover prose-img:rounded-2xl lg:max-w-none">
+        <p>
+          Scheduling an at-home veterinary visit for your pet provides convenience and reduces stress compared to trips to the clinic. However, taking some time to optimize your home environment and
+          prepare your furry patient ahead of the vet's arrival will ensure the smoothest, most efficient, and positive experience for all.
+        </p>
+        <p>
+          <strong>Follow these tips to get your household and pet ready for the in-home veterinary appointment:</strong>
+        </p>
+        <h2>Preparing Your Home for the Mobile Vet</h2>
+        <img src="@img/blog/man-sitting-with-cats.webp" alt="Man Sitting with Cats" />
+        <p>
+          Preparing Your Home for the Mobile Vet is a process that helps you create a suitable environment for your pet’s health check-up at your home. Some of the steps that you can take to prepare
+          your home for the mobile vet are:
+        </p>
+        <h4>Choose an Accessible Room</h4>
+        <p>
+          This step involves selecting a room that is easy to access and spacious enough for the vet to examine your pet comfortably. You should avoid small, crowded spaces that can make your pet feel
+          stressed or claustrophobic.
+        </p>
+        <p>
+          A good choice would be a room like a living room, family room, or dining room for the exam. It should allow the vet room to examine your pet, open their mobile kit, and perform any
+          procedures if needed.
+        </p>
+        <h4>Clear a Flat Exam Surface</h4>
+        <p>
+          This step involves clearing off a flat surface that can serve as the makeshift exam table during the appointment. You should remove any clutter or objects that can interfere with the exam or
+          pose a hazard to your pet.
+        </p>
+        <p>
+          You should also cover the surface with a clean blanket or towel to provide some traction and comfort for your pet’s footing. A good choice would be a table, desk, or counter space that is
+          large enough to accommodate your pet’s size and weight.
+        </p>
+        <h4>Make Room to Move Around</h4>
+        <p>
+          This step involves removing any furniture or objects that can obstruct the vet's movement or limit your pet's mobility. You should create some open space to walk your pet around for lameness
+          assessments and shift positions during the exam.
+        </p>
+        <p>This can help the vet evaluate your pet's gait, posture, and range of motion. A good choice would be to move any chairs, tables, rugs, or toys to the sides or corners of the room.</p>
+        <h4>Ensure Good Lighting</h4>
+        <p>
+          This step involves optimizing the lighting in the room so that the vet can see and assess your pet’s eyes, ears, skin, and other features clearly. You should use natural light if possible or
+          turn on any lamps or overhead lights if needed.
+        </p>
+        <p>
+          You should also supplement with flashlights if needed to illuminate any dark or hard-to-reach areas of your pet’s body. A good choice would be to position your pet near a window or a bright
+          light source and have some flashlights handy in case of low light conditions.
+        </p>
+        <h4>Minimize Distractions</h4>
+        <p>
+          This step involves turning off any TVs and loud music and sequestering any other pets to allow your vet to focus on examining your pet without chaos or distraction. You should also minimize
+          any human interruptions, such as phone calls, visitors, or children, during the appointment.
+        </p>
+        <p>
+          You should also calm your pet down if they are anxious or excited by using soothing words, treats, or toys. A good choice would be to create a quiet and peaceful atmosphere for your pet and
+          your vet.
+        </p>
+        <h4>Share Medical History</h4>
+        <p>
+          This step involves having your pet's comprehensive medical history, vaccine records, medications, and supplements accessible to review with the vet. You should also inform the vet of any
+          current symptoms, concerns, or questions that you have about your pet's health.
+        </p>
+        <p>
+          You should also follow any instructions that the vet gives you before, during, or after the appointment. A good choice would be to gather all the relevant documents and information in
+          advance and have them ready for the vet.
+        </p>
+        <h2>Preparing Your Pet for Their In-Home Exam</h2>
+        <img src="@img/blog/woman-sitting-on-bed-with-dog.webp" alt="Woman Sitting on Bed with Dog" />
+        <h4>Brush Out Their Coat</h4>
+        <p>Thoroughly brushing removes mats and loose hair so your vet can closely evaluate the skin, coat, and the presence of any parasites like fleas or ticks.</p>
+        <h4>Trim Nails</h4>
+        <p>Trimmed nails prevent scrapes to vets during examinations and allow the feeling of lymph nodes for lumps or swelling.</p>
+        <h4>Limit Food and Water</h4>
+        <p>Follow your vet's pre-exam instructions regarding restricted access to food and water, which can interfere with certain diagnostics.</p>
+        <h4>Prevent Potty Accidents</h4>
+        <p>Take your pet outside to relieve themselves shortly before the vet arrives to avoid indoor urine or stool accidents during the appointment.</p>
+        <h4>Exercise Beforehand</h4>
+        <p>Take your pet for a brisk walk or engage in playtime to burn off excess energy and help them remain calm and relaxed during the exam.</p>
+        <h4>Crate-Trained Pets</h4>
+        <p>Place crate-trained anxious pets into their enclosed safe space in the appointment room to minimize stress and prevent hiding.</p>
+        <h4>Cat Clients</h4>
+        <p>Temporarily confine cats to a single room during the visit to avoid bolting and speed exam completion.</p>
+        <h4>Practice Basic Obedience</h4>
+        <p>Refresh your pet's training on basic cues like sit, stay, and down to assist the vet in positioning during assessments.</p>
+        <h2>What to Have Ready for Common Procedures</h2>
+        <h4>Vaccinations</h4>
+        <p>Ensure you have a current rabies certificate available and discuss any vaccine history questions.</p>
+        <h4>Prescription Refills</h4>
+        <p>Mention any refills needed for ongoing medications so the vet has complete medical records.</p>
+        <h4>Heartworm Tests</h4>
+        <p>There is no need to fast for in-clinic heartworm tests but confirm the last test date which determines if due per vet guidelines.</p>
+        <h4>Fecal Exams</h4>
+        <p>Provide a fresh stool sample if the vet requested a specimen to be ready for parasite screening.</p>
+        <h4>Microchipping</h4>
+        <p>Prepare the enrolled microchip ID number, if available, and registration contact details to complete the process.</p>
+        <p>
+          With your home optimized for veterinary care and your furry patient groomed and ready for their visit, your mobile vet can provide thorough and attentive care from the comfort of your home.
+        </p>
+      </article>
+    </div>
+  </div>
+  {% include "partials/formAppointment.html" %}
+</main>
+{% endblock %}

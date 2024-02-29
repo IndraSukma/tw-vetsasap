@@ -1,0 +1,94 @@
+{% extends "layouts/main.html" %}
+
+<!-- prettier-ignore -->
+{% from "macros/faq.html" import faq %}
+
+<!-- prettier-ignore -->
+{% block content %}
+<main>
+  <div class="container">
+    <div class="breadcrumbs text-sm md:text-base font-semibold mt-28 mb-12 lg:mt-40">
+      <ul>
+        <li><a href="index.html" class="link link-hover hover:link-primary">Home</a></li>
+        <li><a href="index.html#services" class="link link-hover hover:link-primary">Services</a></li>
+        <li><span class="text-gray-500">{{ global.services[0].title }}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container flex flex-col md:flex-row-reverse gap-8 md:gap-6 xl:gap-8 mb-20 md:mb-24 xl:mb-32 items-center xl:justify-between">
+    <img src="{{ global.services[0].image }}" alt="{{ global.services[0].image | replace(" @img/services/", "") | replace(".webp", "") | replace("-", " ") | title }}" class="md:w-1/2 object-cover w-full aspect-[4/3] rounded-2xl" />
+    <div class="md:w-1/2 flex flex-col justify-center">
+      <h1 class="text-4xl/none lg:text-5xl font-black">
+        In-Home <br class="sm:hidden md:block xl:hidden" />
+        Puppy & Kitten <br />
+        <span class="text-primary">Wellness Exams</span>
+      </h1>
+      <p class="text-base md:text-sm lg:text-lg text-gray-700 mt-4 mb-8 lg:mt-6 lg:mb-12">
+        Your puppy or kitten deserves the best start in life, and that is why we offer comprehensive wellness visits to support their health and happiness. Our wellness visits include physical exams,
+        vaccinations, parasite prevention, and much more.
+      </p>
+      <a href="#request-appointment" class="btn lg:btn-lg btn-secondary mr-auto">Request appointment</a>
+    </div>
+  </div>
+  <div class="container">
+    <article
+      class="prose lg:prose-lg prose-h2:text-gray-950 prose-h4:text-xl prose-h4:text-accent prose-p:text-gray-700 prose-img:w-full prose-img:object-cover prose-img:rounded-2xl lg:max-w-none md:w-4/6 mx-auto mb-20 md:mb-24 xl:mb-32">
+      <h2>What is Puppy and Kitten Wellness?</h2>
+      <p>
+        Puppy and kitten wellness care involves scheduled veterinary visits at strategic life stages in the first year to enhance your new pet's health and development. By proactively detecting any
+        medical or behavioral issues early, providing critical core immunizations, control intestinal parasites, and guiding proper nutrition, growth rate, socialization, and training, we set your new
+        puppy or kitten up for a long, happy, and healthy life as part of your family.
+      </p>
+      <h2>What to Expect from Puppy and Kitten Wellnes</h2>
+      <p>
+        During each wellness visit for your puppy or kitten, you can expect a nose-to-tail physical examination to monitor their growth, weight gain, temperature, and overall condition during their
+        growth. We closely evaluate developmental milestones, provide age-specific care guidelines. Physical exams allow the detection of any abnormalities requiring further diagnostics or treatment.
+      </p>
+      <p>
+        We will discuss an individualized vaccine schedule for your puppy or kitten based on their age and lifestyle. Core vaccines protect against contagious and potentially fatal illnesses like
+        distemper, parvovirus, panleukopenia, rabies, feline leukemia, among others. We ensure your pet receives all properly timed initial vaccine doses and boosters for full immunity.
+      </p>
+      <p>
+        Intestinal parasite control is also a key part of wellness visits, including deworming, starting monthly flea, tick, and heartworm prevention. We perform fecal tests to screen for any
+        parasites affecting gastrointestinal health, nutrition, and development. Your puppy or kitten will be prescribed deworming medications safe for their young age.
+      </p>
+      <h2>How does Puppy and Kitten Wellness Benefit Your Pet?</h2>
+      <p>
+        Frequent veterinary care early in life allows us to monitor proper development and prevent or treat problems early. Vaccines build critical immunity against contagious diseases like parvovirus
+        or distemper, which can be fatal in puppies and kittens.
+      </p>
+      <p>
+        Parasite prevention maintains health by preventing anemia, diarrhea, malnutrition, and other issues intestinal parasites can cause. Our guidance sets your pet up for success for optimal
+        nutrition, socialization, training, and care. Preventative wellness leads to better long-term health and less stress during future veterinary visits.
+      </p>
+      <p>
+        Consistent, well-trained pet care early in life lays the best possible foundation for an active, enriched lifetime with your four-legged family member. We at Vets ASAP handle the preventative
+        health details so you can focus on bonding and enjoying quality time.
+      </p>
+    </article>
+  </div>
+  <!-- prettier-ignore -->
+  {{ faq(global.services[0].faqs, "mb-20 md:mb-24 xl:mb-32") }}
+  {% include "partials/formAppointment.html" %} 
+  {% include "partials/vetsasapWellnessClub.html" %}
+  <div id="services" class="container text-center my-20 md:my-24 xl:my-32">
+    <h1 class="text-4xl/none lg:text-5xl font-black mb-12 xl:mb-16">Explore Our Services</h1>
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-y-6 xl:gap-y-8 -mx-3 xl:-mx-4">
+      {% for service in global.services %}
+      <!-- prettier-ignore -->
+      {% if loop.index != 1 and loop.index <= 7 %}
+      <div class="sm:w-1/2 lg:w-1/3 flex px-3 xl:px-4">
+        <a href="{{ service.page }}" class="btn btn-lg w-full h-auto flex flex-col justify-start gap-0 font-normal bg-gray-50 border-0 px-6 py-7">
+          <img src="{{ service.icon }}" alt="Cat Sitting" height="64" width="64" class="mx-auto" />
+          <h2 class="text-lg xl:text-xl font-bold mt-4 mb-3">{{ service.title }}</h2>
+          <p class="text-sm xl:text-base text-gray-700 line-clamp-3">{{ service.description }}</p>
+        </a>
+      </div>
+      {% endif %}
+      <!-- prettier-ignore -->
+      {% endfor %}
+    </div>
+    <a href="index.html#services" class="btn lg:btn-lg btn-secondary mt-12 xl:mt-16">Explore more</a>
+  </div>
+</main>
+{% endblock %}

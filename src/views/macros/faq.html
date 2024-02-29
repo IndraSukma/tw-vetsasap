@@ -1,0 +1,16 @@
+{% macro faq(faqs = [], class = "") %}
+<div id="faq" class="container {{ class }}">
+  <h1 class="text-4xl/none lg:text-5xl text-center font-black mb-12 xl:mb-16">FAQs</h1>
+  <div class="md:w-2/3 flex flex-col gap-y-3 lg:gap-y-4 mx-auto">
+    {% for faq in faqs %}
+    <div class="collapse collapse-arrow bg-gray-50">
+      <input type="radio" name="faq" {{ 'checked' if loop.first }} />
+      <div class="collapse-title text-sm sm:text-base lg:text-xl font-semibold text-accent flex items-center sm:pl-5 sm:pr-14 lg:pl-8 lg:pr-20 lg:py-6 after:text-primary lg:after:[height:.625rem!important] lg:after:[width:.625rem!important] lg:after:[right:2.5rem!important]">{{ faq.question }}</div>
+      <div class="collapse-content text-sm sm:text-base sm:px-5 lg:px-8">
+        <p class="lg:mb-2">{{ faq.answer }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endmacro %}
