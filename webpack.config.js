@@ -1,6 +1,5 @@
 const path = require("path")
 const HtmlBundlerPlugin = require("html-bundler-webpack-plugin")
-const Nunjucks = require("nunjucks")
 const glob = require("glob-all")
 const dataGlobal = require("./src/data/_global.json")
 
@@ -66,12 +65,17 @@ module.exports = (env, argv) => {
             return `assets/css/${filename}`
           },
         },
-        loaderOptions: {
-          preprocessor: (template, { data }) => {
-            const njk = Nunjucks.configure(path.join(__dirname, "src/views/"))
-            njk.addGlobal("global", dataGlobal)
-            return njk.renderString(template, data)
-          },
+        // pass data into all pages with the object name `global`
+        data: {
+          global: dataGlobal,
+        },
+        // use the build-in nunjucks preprocessor
+        preprocessor: 'nunjucks',
+        preprocessorOptions: {
+          // define here the Nunjucks options
+          views: [
+            'src/views/',
+          ],
         },
         minify: {
           collapseWhitespace: false,
