@@ -7,7 +7,7 @@ Mobile Veterinary Care built with Daisy UI
 ## Installation
 
 ```
-git clone https://github.com/IndraSukma/tw-maynooth-furniture.git
+git clone https://github.com/IndraSukma/tw-vetsasap.git
 cd tw-vetsasap
 npm install
 ```
